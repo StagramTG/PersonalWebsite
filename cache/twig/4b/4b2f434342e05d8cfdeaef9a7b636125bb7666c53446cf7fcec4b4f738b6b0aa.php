@@ -28,9 +28,12 @@ class __TwigTemplate_b282f1cca4ae31ddff08ed27a4ae62dca01abb744032f72f556dc779d66
     public function block_content($context, array $blocks = array())
     {
         // line 4
-        echo "    ";
+        echo "\t<div class=\"card-panel\">
+    \t";
+        // line 5
         echo $this->getAttribute(($context["page"] ?? null), "content", array());
         echo "
+    </div>
 ";
     }
 
@@ -46,7 +49,7 @@ class __TwigTemplate_b282f1cca4ae31ddff08ed27a4ae62dca01abb744032f72f556dc779d66
 
     public function getDebugInfo()
     {
-        return array (  31 => 4,  28 => 3,  11 => 1,);
+        return array (  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -62,7 +65,9 @@ class __TwigTemplate_b282f1cca4ae31ddff08ed27a4ae62dca01abb744032f72f556dc779d66
         return new Twig_Source("{% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    {{ page.content }}
+\t<div class=\"card-panel\">
+    \t{{ page.content }}
+    </div>
 {% endblock %}
 ", "default.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\default.html.twig");
     }
