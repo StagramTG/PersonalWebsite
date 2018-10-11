@@ -29,7 +29,7 @@
 
 {% endblock head%}
 </head>
-<body id="top" class="{{ page.header.body_classes }}">
+<body id="top" class="{{ page.header.body_classes }} blue-grey lighten-5">
 
 {% block header %}
     <nav class="blue-grey darken-4">
@@ -45,7 +45,7 @@
 {% endblock %}
 
 {% block body %}
-    <section id="body" class="blue-grey lighten-5">
+    <section id="body">
 
         <div class="row">
 
@@ -67,7 +67,7 @@
 
                 <div class="card-panel z-depth-2">
 
-                    <h5>Information</h5>
+                    <h5><span class="red-text text-lighten-1">I</span>nformation</h5>
 
                     <table>
                         <tbody>
@@ -93,7 +93,36 @@
                         </tbody>
                     </table>
 
-                </div>  
+                </div>
+
+                <div class="card-panel z-depth-2">
+
+                    <h5><span class="red-text text-lighten-1">F</span>ind me on</h5>
+
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col s4 center-align">
+                            <a class="" href="https://github.com/StagramTG">
+                                <i class="fab fa-github fa-3x black-text"></i>
+                            </a>
+                        </div>
+
+                        <div class="col s4 center-align">
+                            <a class="" href="https://www.linkedin.com/in/thomas-gredin-345339137/">
+                                <i class="fab fa-linkedin fa-3x blue-text text-darken-2"></i>
+                            </a>
+                        </div>
+
+                        <div class="col s4 center-align">
+                            <a class="" href="https://twitter.com/GredinTom">
+                                <i class="fab fa-twitter fa-3x"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <div class="col l9 m12">
@@ -106,7 +135,31 @@
 {% endblock %}
 
 {% block footer %}
-    
+    <footer class="page-footer blue-grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <p class="grey-text text-lighten-4">
+                This website is based on <a href="https://getgrav.org">Grav CMS</a> and <a href="https://materializecss.com">Materialize.</a><br>
+                Icons are from <a href="https://fontawesome.com">Font awesome</a>
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Social networks</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="https://github.com/StagramTG">Github</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/thomas-gredin-345339137/">Linked In</a></li>
+              <li><a class="grey-text text-lighten-3" href="https://twitter.com/GredinTom">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2018 All right reserved
+        </div>
+      </div>
+    </footer>
 {% endblock %}
 
 {% block bottom %}

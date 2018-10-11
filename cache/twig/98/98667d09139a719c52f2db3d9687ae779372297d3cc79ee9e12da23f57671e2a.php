@@ -41,7 +41,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 <body id=\"top\" class=\"";
         // line 32
         echo $this->getAttribute($this->getAttribute(($context["page"] ?? null), "header", array()), "body_classes", array());
-        echo "\">
+        echo " blue-grey lighten-5\">
 
 ";
         // line 34
@@ -51,17 +51,17 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 ";
         // line 47
         $this->displayBlock('body', $context, $blocks);
-        // line 107
+        // line 136
         echo "
 ";
-        // line 108
+        // line 137
         $this->displayBlock('footer', $context, $blocks);
-        // line 111
+        // line 164
         echo "
 ";
-        // line 112
+        // line 165
         $this->displayBlock('bottom', $context, $blocks);
-        // line 115
+        // line 168
         echo "
 </body>
 </html>
@@ -175,7 +175,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
     public function block_body($context, array $blocks = array())
     {
         // line 48
-        echo "    <section id=\"body\" class=\"blue-grey lighten-5\">
+        echo "    <section id=\"body\">
 
         <div class=\"row\">
 
@@ -200,7 +200,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
                 <div class=\"card-panel z-depth-2\">
 
-                    <h5>Information</h5>
+                    <h5><span class=\"red-text text-lighten-1\">I</span>nformation</h5>
 
                     <table>
                         <tbody>
@@ -226,14 +226,43 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
                         </tbody>
                     </table>
 
-                </div>  
+                </div>
+
+                <div class=\"card-panel z-depth-2\">
+
+                    <h5><span class=\"red-text text-lighten-1\">F</span>ind me on</h5>
+
+                    <br>
+
+                    <div class=\"row\">
+
+                        <div class=\"col s4 center-align\">
+                            <a class=\"\" href=\"https://github.com/StagramTG\">
+                                <i class=\"fab fa-github fa-3x black-text\"></i>
+                            </a>
+                        </div>
+
+                        <div class=\"col s4 center-align\">
+                            <a class=\"\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">
+                                <i class=\"fab fa-linkedin fa-3x blue-text text-darken-2\"></i>
+                            </a>
+                        </div>
+
+                        <div class=\"col s4 center-align\">
+                            <a class=\"\" href=\"https://twitter.com/GredinTom\">
+                                <i class=\"fab fa-twitter fa-3x\"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <div class=\"col l9 m12\">
                 ";
-        // line 100
+        // line 129
         $this->displayBlock('content', $context, $blocks);
-        // line 101
+        // line 130
         echo "            </div>
 
         </div>
@@ -242,23 +271,47 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 ";
     }
 
-    // line 100
+    // line 129
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 108
+    // line 137
     public function block_footer($context, array $blocks = array())
     {
-        // line 109
-        echo "    
+        // line 138
+        echo "    <footer class=\"page-footer blue-grey darken-4\">
+      <div class=\"container\">
+        <div class=\"row\">
+          <div class=\"col l6 s12\">
+            <p class=\"grey-text text-lighten-4\">
+                This website is based on <a href=\"https://getgrav.org\">Grav CMS</a> and <a href=\"https://materializecss.com\">Materialize.</a><br>
+                Icons are from <a href=\"https://fontawesome.com\">Font awesome</a>
+            </p>
+          </div>
+          <div class=\"col l4 offset-l2 s12\">
+            <h5 class=\"white-text\">Social networks</h5>
+            <ul>
+              <li><a class=\"grey-text text-lighten-3\" href=\"https://github.com/StagramTG\">Github</a></li>
+              <li><a class=\"grey-text text-lighten-3\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">Linked In</a></li>
+              <li><a class=\"grey-text text-lighten-3\" href=\"https://twitter.com/GredinTom\">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class=\"footer-copyright\">
+        <div class=\"container\">
+        © 2018 All right reserved
+        </div>
+      </div>
+    </footer>
 ";
     }
 
-    // line 112
+    // line 165
     public function block_bottom($context, array $blocks = array())
     {
-        // line 113
+        // line 166
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -277,7 +330,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
     public function getDebugInfo()
     {
-        return array (  262 => 113,  259 => 112,  254 => 109,  251 => 108,  246 => 100,  237 => 101,  235 => 100,  188 => 56,  178 => 48,  175 => 47,  171 => 41,  168 => 40,  165 => 39,  158 => 42,  156 => 39,  150 => 35,  147 => 34,  143 => 27,  140 => 26,  137 => 25,  133 => 22,  130 => 21,  127 => 20,  124 => 19,  116 => 28,  114 => 25,  108 => 23,  106 => 19,  98 => 14,  94 => 13,  91 => 12,  89 => 11,  78 => 7,  75 => 6,  72 => 5,  65 => 115,  63 => 112,  60 => 111,  58 => 108,  55 => 107,  53 => 47,  50 => 46,  48 => 34,  43 => 32,  40 => 31,  38 => 5,  33 => 3,  30 => 2,  28 => 1,);
+        return array (  315 => 166,  312 => 165,  283 => 138,  280 => 137,  275 => 129,  266 => 130,  264 => 129,  188 => 56,  178 => 48,  175 => 47,  171 => 41,  168 => 40,  165 => 39,  158 => 42,  156 => 39,  150 => 35,  147 => 34,  143 => 27,  140 => 26,  137 => 25,  133 => 22,  130 => 21,  127 => 20,  124 => 19,  116 => 28,  114 => 25,  108 => 23,  106 => 19,  98 => 14,  94 => 13,  91 => 12,  89 => 11,  78 => 7,  75 => 6,  72 => 5,  65 => 168,  63 => 165,  60 => 164,  58 => 137,  55 => 136,  53 => 47,  50 => 46,  48 => 34,  43 => 32,  40 => 31,  38 => 5,  33 => 3,  30 => 2,  28 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -321,7 +374,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
 {% endblock head%}
 </head>
-<body id=\"top\" class=\"{{ page.header.body_classes }}\">
+<body id=\"top\" class=\"{{ page.header.body_classes }} blue-grey lighten-5\">
 
 {% block header %}
     <nav class=\"blue-grey darken-4\">
@@ -337,7 +390,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 {% endblock %}
 
 {% block body %}
-    <section id=\"body\" class=\"blue-grey lighten-5\">
+    <section id=\"body\">
 
         <div class=\"row\">
 
@@ -359,7 +412,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
                 <div class=\"card-panel z-depth-2\">
 
-                    <h5>Information</h5>
+                    <h5><span class=\"red-text text-lighten-1\">I</span>nformation</h5>
 
                     <table>
                         <tbody>
@@ -385,7 +438,36 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
                         </tbody>
                     </table>
 
-                </div>  
+                </div>
+
+                <div class=\"card-panel z-depth-2\">
+
+                    <h5><span class=\"red-text text-lighten-1\">F</span>ind me on</h5>
+
+                    <br>
+
+                    <div class=\"row\">
+
+                        <div class=\"col s4 center-align\">
+                            <a class=\"\" href=\"https://github.com/StagramTG\">
+                                <i class=\"fab fa-github fa-3x black-text\"></i>
+                            </a>
+                        </div>
+
+                        <div class=\"col s4 center-align\">
+                            <a class=\"\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">
+                                <i class=\"fab fa-linkedin fa-3x blue-text text-darken-2\"></i>
+                            </a>
+                        </div>
+
+                        <div class=\"col s4 center-align\">
+                            <a class=\"\" href=\"https://twitter.com/GredinTom\">
+                                <i class=\"fab fa-twitter fa-3x\"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <div class=\"col l9 m12\">
@@ -398,7 +480,31 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 {% endblock %}
 
 {% block footer %}
-    
+    <footer class=\"page-footer blue-grey darken-4\">
+      <div class=\"container\">
+        <div class=\"row\">
+          <div class=\"col l6 s12\">
+            <p class=\"grey-text text-lighten-4\">
+                This website is based on <a href=\"https://getgrav.org\">Grav CMS</a> and <a href=\"https://materializecss.com\">Materialize.</a><br>
+                Icons are from <a href=\"https://fontawesome.com\">Font awesome</a>
+            </p>
+          </div>
+          <div class=\"col l4 offset-l2 s12\">
+            <h5 class=\"white-text\">Social networks</h5>
+            <ul>
+              <li><a class=\"grey-text text-lighten-3\" href=\"https://github.com/StagramTG\">Github</a></li>
+              <li><a class=\"grey-text text-lighten-3\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">Linked In</a></li>
+              <li><a class=\"grey-text text-lighten-3\" href=\"https://twitter.com/GredinTom\">Twitter</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class=\"footer-copyright\">
+        <div class=\"container\">
+        © 2018 All right reserved
+        </div>
+      </div>
+    </footer>
 {% endblock %}
 
 {% block bottom %}

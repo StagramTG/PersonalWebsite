@@ -29,7 +29,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
     {
         // line 4
         echo "\t
-\t<div class=\"card-panel\">
+\t<div class=\"card-panel z-depth-2\">
 \t\t";
         // line 6
         echo $this->getAttribute(($context["page"] ?? null), "content", array());
@@ -38,7 +38,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 
 \t<!-- Skills -->
 
-\t<div class=\"card-panel\">
+\t<div class=\"card-panel z-depth-2\">
 
 \t\t<h3><span class=\"red-text text-lighten-1\">S</span>kills</h3>
 
@@ -110,7 +110,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t<div class=\"row\">
 \t\t<div class=\"col l6 m12 s12\">
 \t\t\t<!-- Education -->
-\t\t\t<div class=\"card-panel\">
+\t\t\t<div class=\"card-panel z-depth-2\">
 
 \t\t\t\t<h3><span class=\"red-text text-lighten-1\">E</span>ducation</h3>
 
@@ -159,11 +159,36 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 
 \t\t<div class=\"col l6 m12 s12\">
 \t\t\t<!-- Education -->
-\t\t\t<div class=\"card-panel\">
+\t\t\t<div class=\"card-panel z-depth-2\">
 
 \t\t\t\t<h3><span class=\"red-text text-lighten-1\">E</span>xperience</h3>
-
+\t\t\t\t\t
 \t\t\t\t<br>
+
+\t\t\t\t<table>
+\t\t\t\t\t<tbody>
+\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t\t<b>Full stack developer internship</b> <span class=\"red-text text-lighten-1\">September 2017 - February 2018</span><br>
+\t\t\t\t\t\t\t\tInternship at ENEDIS in France, Alpes, as a full stack web developer. I created an application for management and financial purposes.
+\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t</tr>
+
+\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t\t<b>C# developer</b> <span class=\"red-text text-lighten-1\">July - August 2016</span><br>
+\t\t\t\t\t\t\t\tC# developer for the town hall of Vesoul. I developed an application to facilitate the migration of a server.
+\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t</tr>
+
+\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t\t<b>Java developer internship</b> <span class=\"red-text text-lighten-1\">May - June 2015</span><br>
+\t\t\t\t\t\t\t\tInternship at Faurecia in France, Haute-Saône, as Java developer. I created an application to improve truck loading and keep track of parts.
+\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t</tr>
+\t\t\t\t\t</tbody>
+\t\t\t\t</table>
 
 \t\t\t</div>
 
@@ -205,13 +230,13 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 
 {% block content %}
 \t
-\t<div class=\"card-panel\">
+\t<div class=\"card-panel z-depth-2\">
 \t\t{{ page.content }}
 \t</div>
 
 \t<!-- Skills -->
 
-\t<div class=\"card-panel\">
+\t<div class=\"card-panel z-depth-2\">
 
 \t\t<h3><span class=\"red-text text-lighten-1\">S</span>kills</h3>
 
@@ -283,7 +308,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t<div class=\"row\">
 \t\t<div class=\"col l6 m12 s12\">
 \t\t\t<!-- Education -->
-\t\t\t<div class=\"card-panel\">
+\t\t\t<div class=\"card-panel z-depth-2\">
 
 \t\t\t\t<h3><span class=\"red-text text-lighten-1\">E</span>ducation</h3>
 
@@ -332,11 +357,36 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 
 \t\t<div class=\"col l6 m12 s12\">
 \t\t\t<!-- Education -->
-\t\t\t<div class=\"card-panel\">
+\t\t\t<div class=\"card-panel z-depth-2\">
 
 \t\t\t\t<h3><span class=\"red-text text-lighten-1\">E</span>xperience</h3>
-
+\t\t\t\t\t
 \t\t\t\t<br>
+
+\t\t\t\t<table>
+\t\t\t\t\t<tbody>
+\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t\t<b>Full stack developer internship</b> <span class=\"red-text text-lighten-1\">September 2017 - February 2018</span><br>
+\t\t\t\t\t\t\t\tInternship at ENEDIS in France, Alpes, as a full stack web developer. I created an application for management and financial purposes.
+\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t</tr>
+
+\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t\t<b>C# developer</b> <span class=\"red-text text-lighten-1\">July - August 2016</span><br>
+\t\t\t\t\t\t\t\tC# developer for the town hall of Vesoul. I developed an application to facilitate the migration of a server.
+\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t</tr>
+
+\t\t\t\t\t\t<tr>
+\t\t\t\t\t\t\t<td>
+\t\t\t\t\t\t\t\t<b>Java developer internship</b> <span class=\"red-text text-lighten-1\">May - June 2015</span><br>
+\t\t\t\t\t\t\t\tInternship at Faurecia in France, Haute-Saône, as Java developer. I created an application to improve truck loading and keep track of parts.
+\t\t\t\t\t\t\t</td>
+\t\t\t\t\t\t</tr>
+\t\t\t\t\t</tbody>
+\t\t\t\t</table>
 
 \t\t\t</div>
 
