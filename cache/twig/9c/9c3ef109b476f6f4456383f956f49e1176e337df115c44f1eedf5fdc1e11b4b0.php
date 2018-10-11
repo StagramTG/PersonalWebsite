@@ -197,6 +197,66 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t</div>
 
 \t<!-- Portfolio -->
+\t<div class=\"card-panel z-depth-2\">
+
+\t\t<h3><span class=\"purple-text text-darken-4\">D</span>issident Studio</h3>
+
+\t\t<br>
+
+\t\t<div class=\"row\">
+
+\t\t\t<div class=\"col l3 s12 center-align\">
+
+\t\t\t\t<img class=\"responsive-img\" src=\"";
+        // line 180
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/dissidentstudio.webp");
+        echo "\">
+
+\t\t\t</div>
+
+\t\t\t<div class=\"col l9 s12\">
+
+\t\t\t\t<p>
+\t\t\t\t\tWith two friends of my Two-year degree in computer science we create a non official game studio. We are all three
+\t\t\t\t\tpassionated by the creation, from cratch or by using industry reference game engine, of games that we would love to play. <br><br>
+\t\t\t\t\tIt started in 2015 and today our website reference our projects (4 released games and 1 project in development).
+\t\t\t\t</p>
+
+\t\t\t</div>
+
+\t\t</div>
+
+\t\t<div class=\"row\">
+
+\t\t\t<div class=\"col l6 s12\">
+
+\t\t\t\t<h5><span class=\"purple-text text-darken-4\">R</span>uins</h5>
+
+\t\t\t\t<p>
+\t\t\t\t\tWe are actively developing Ruins ! We do it on our free time and by pation. <br><br>
+\t\t\t\t\tThe core concept is to have fun alone or with your friends in local coop by defeating waves of ennemies in
+\t\t\t\t\ta strange universe where everything can append ! If you want more about the game, visit our website.
+\t\t\t\t</p>
+
+\t\t\t\t<div class=\"center-align\">
+\t\t\t\t\t<a href=\"https://www.dissidentstudio.fr\" class=\"waves-effect waves-light btn-large purple darken-4\">Dissident Studio Website</a>
+\t\t\t\t\t<br><br>
+\t\t\t\t</div>
+
+\t\t\t</div>
+
+\t\t\t<div class=\"col l6 s12 center-align\">
+
+\t\t\t\t<img class=\"responsive-img\" src=\"";
+        // line 217
+        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/Ruins.png");
+        echo "\">
+
+\t\t\t</div>
+
+\t\t</div>
+
+\t</div>
     
 ";
     }
@@ -213,7 +273,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 
     public function getDebugInfo()
     {
-        return array (  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  252 => 217,  212 => 180,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -395,6 +455,60 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t</div>
 
 \t<!-- Portfolio -->
+\t<div class=\"card-panel z-depth-2\">
+
+\t\t<h3><span class=\"purple-text text-darken-4\">D</span>issident Studio</h3>
+
+\t\t<br>
+
+\t\t<div class=\"row\">
+
+\t\t\t<div class=\"col l3 s12 center-align\">
+
+\t\t\t\t<img class=\"responsive-img\" src=\"{{ url('theme://images/dissidentstudio.webp') }}\">
+
+\t\t\t</div>
+
+\t\t\t<div class=\"col l9 s12\">
+
+\t\t\t\t<p>
+\t\t\t\t\tWith two friends of my Two-year degree in computer science we create a non official game studio. We are all three
+\t\t\t\t\tpassionated by the creation, from cratch or by using industry reference game engine, of games that we would love to play. <br><br>
+\t\t\t\t\tIt started in 2015 and today our website reference our projects (4 released games and 1 project in development).
+\t\t\t\t</p>
+
+\t\t\t</div>
+
+\t\t</div>
+
+\t\t<div class=\"row\">
+
+\t\t\t<div class=\"col l6 s12\">
+
+\t\t\t\t<h5><span class=\"purple-text text-darken-4\">R</span>uins</h5>
+
+\t\t\t\t<p>
+\t\t\t\t\tWe are actively developing Ruins ! We do it on our free time and by pation. <br><br>
+\t\t\t\t\tThe core concept is to have fun alone or with your friends in local coop by defeating waves of ennemies in
+\t\t\t\t\ta strange universe where everything can append ! If you want more about the game, visit our website.
+\t\t\t\t</p>
+
+\t\t\t\t<div class=\"center-align\">
+\t\t\t\t\t<a href=\"https://www.dissidentstudio.fr\" class=\"waves-effect waves-light btn-large purple darken-4\">Dissident Studio Website</a>
+\t\t\t\t\t<br><br>
+\t\t\t\t</div>
+
+\t\t\t</div>
+
+\t\t\t<div class=\"col l6 s12 center-align\">
+
+\t\t\t\t<img class=\"responsive-img\" src=\"{{ url('theme://images/Ruins.png') }}\">
+
+\t\t\t</div>
+
+\t\t</div>
+
+\t</div>
     
 {% endblock %}", "homepage.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\homepage.html.twig");
     }
