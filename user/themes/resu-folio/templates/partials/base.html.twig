@@ -1,0 +1,117 @@
+{% set theme_config = attribute(config.themes, config.system.pages.theme) %}
+<!DOCTYPE html>
+<html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
+<head>
+{% block head %}
+    <meta charset="utf-8" />
+    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include 'partials/metadata.html.twig' %}
+
+    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+    <link rel="canonical" href="{{ page.url(true, true) }}" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    {% block stylesheets %}
+        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css', 100) %}
+        {% do assets.addCss('theme://css/custom.css', 99) %}
+    {% endblock %}
+    {{ assets.css() }}
+
+    {% block javascripts %}
+        {% do assets.addJs('jquery', 100) %}
+    {% endblock %}
+    {{ assets.js() }}
+
+{% endblock head%}
+</head>
+<body id="top" class="{{ page.header.body_classes }}">
+
+{% block header %}
+    <nav class="blue-grey darken-4">
+        <div class="nav-wrapper container">
+        <a href="#" class="brand-logo"><span class="red-text text-lighten-1">T</span>homas <span class="red-text text-lighten-1">G</span>redin</a>
+
+            {% block header_navigation %}
+                {% include 'partials/navigation.html.twig' %}
+            {% endblock %}
+
+        </div>
+    </nav>
+{% endblock %}
+
+{% block body %}
+    <section id="body" class="blue-grey lighten-5">
+
+        <div class="row">
+
+            <div class="col l3 m12">
+                <div class="card-panel z-depth-2">
+
+                        <div class="center-align">
+                            <img class="responsive-img" src="{{ url('theme://images/profil.jpg') }}">
+                            <h6>Computer Science Student specialized in Computer Graphics</h6>
+                        </div>
+
+                        <blockquote>
+                            In love with Computer Graphics Programming and video games creation, 
+                            I love to create things from scratch or by using first class industry Game Engines
+                            such as Unity3D.
+                        </blockquote>
+
+                </div>
+
+                <div class="card-panel z-depth-2">
+
+                    <h5>Information</h5>
+
+                    <table>
+                        <tbody>
+                          <tr>
+                            <td><i class="fas fa-home fa-lg red-text text-lighten-1"></i></td>
+                            <td>Belfort, France</td>
+                          </tr>
+
+                          <tr>
+                            <td><i class="fas fa-flag fa-lg red-text text-lighten-1"></i></td>
+                            <td>French</td>
+                          </tr>
+
+                          <tr>
+                            <td><i class="fas fa-phone fa-lg red-text text-lighten-1"></i></td>
+                            <td>(+33)669 606 859</td>
+                          </tr>
+
+                          <tr>
+                            <td><i class="fas fa-envelope fa-lg red-text text-lighten-1"></i></td>
+                            <td>thomas.gredin@utbm.fr</td>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                </div>  
+            </div>
+
+            <div class="col l9 m12">
+                {% block content %}{% endblock %}
+            </div>
+
+        </div>
+
+    </section>
+{% endblock %}
+
+{% block footer %}
+    
+{% endblock %}
+
+{% block bottom %}
+    {{ assets.js('bottom') }}
+{% endblock %}
+
+</body>
+</html>

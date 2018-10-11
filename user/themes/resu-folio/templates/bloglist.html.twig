@@ -1,0 +1,17 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	
+	{% set collection = page.collection() %}
+
+    {% for p in collection %}
+        
+    	<h1>{{ p.title }}</h1>
+
+    {% endfor %}
+
+    {% if config.plugins.pagination.enabled and collection.params.pagination %}
+	    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+	{% endif %}
+
+{% endblock %}
