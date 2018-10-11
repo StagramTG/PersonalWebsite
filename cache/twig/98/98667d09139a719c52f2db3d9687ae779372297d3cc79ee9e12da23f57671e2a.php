@@ -149,7 +149,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
         // line 35
         echo "    <nav class=\"blue-grey darken-4\">
         <div class=\"nav-wrapper container\">
-        <a href=\"#\" class=\"brand-logo\"><span class=\"red-text text-lighten-1\">T</span>homas <span class=\"red-text text-lighten-1\">G</span>redin</a>
+        <a href=\"/\" class=\"brand-logo\"><span class=\"red-text text-lighten-1\">T</span>homas <span class=\"red-text text-lighten-1\">G</span>redin</a>
 
             ";
         // line 39
@@ -379,7 +379,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 {% block header %}
     <nav class=\"blue-grey darken-4\">
         <div class=\"nav-wrapper container\">
-        <a href=\"#\" class=\"brand-logo\"><span class=\"red-text text-lighten-1\">T</span>homas <span class=\"red-text text-lighten-1\">G</span>redin</a>
+        <a href=\"/\" class=\"brand-logo\"><span class=\"red-text text-lighten-1\">T</span>homas <span class=\"red-text text-lighten-1\">G</span>redin</a>
 
             {% block header_navigation %}
                 {% include 'partials/navigation.html.twig' %}
