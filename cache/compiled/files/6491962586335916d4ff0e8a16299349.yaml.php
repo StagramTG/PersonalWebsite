@@ -2,15 +2,15 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/laragon/www/grav-admin/user/config/site.yaml',
-    'modified' => 1538429804,
+    'modified' => 1539264783,
     'data' => [
-        'title' => 'Grav',
+        'title' => 'Thomas Gredin',
         'author' => [
-            'name' => 'Joe Bloggs',
-            'email' => 'joe@example.com'
+            'name' => 'Thomas Gredin',
+            'email' => 't.gredin@gmx.fr'
         ],
         'metadata' => [
-            'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+            'description' => 'Thomas Gredin personal website/blog/portfolio/resume'
         ]
     ]
 ];

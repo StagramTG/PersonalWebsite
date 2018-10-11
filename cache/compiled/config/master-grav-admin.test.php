@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1539019756,
-    'checksum' => '4d1c25e096d6572cae369f6e0e0a738f',
+    'timestamp' => 1539264790,
+    'checksum' => '17c42db44cbc0ea02fc2342df1a36cdd',
     'files' => [
         'user/config' => [
             'media' => [
@@ -19,7 +19,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1538429804
+                'modified' => 1539264783
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -575,18 +575,18 @@ return [
             'salt' => 'MxhJZ43c60ybvV'
         ],
         'site' => [
-            'title' => 'Grav',
+            'title' => 'Thomas Gredin',
             'default_lang' => 'en',
             'author' => [
-                'name' => 'Joe Bloggs',
-                'email' => 'joe@example.com'
+                'name' => 'Thomas Gredin',
+                'email' => 't.gredin@gmx.fr'
             ],
             'taxonomies' => [
                 0 => 'category',
                 1 => 'tag'
             ],
             'metadata' => [
-                'description' => 'Grav is an easy to use, yet powerful, open source flat-file CMS'
+                'description' => 'Thomas Gredin personal website/blog/portfolio/resume'
             ],
             'summary' => [
                 'enabled' => true,

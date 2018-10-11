@@ -217,9 +217,9 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t\t\t<div class=\"col l9 s12\">
 
 \t\t\t\t<p>
-\t\t\t\t\tWith two friends of my Two-year degree in computer science we create a non official game studio. We are all three
-\t\t\t\t\tpassionated by the creation, from cratch or by using industry reference game engine, of games that we would love to play. <br><br>
-\t\t\t\t\tIt started in 2015 and today our website reference our projects (4 released games and 1 project in development).
+\t\t\t\t\tWith two friends of my Two-year degree in computer science we created a non official game studio. We are all three
+\t\t\t\t\tpassionated by the creation, from scratch or by using industry reference game engine, of games that we would love to play. <br><br>
+\t\t\t\t\tIt started in 2014 and today our website reference our projects (4 released games and 1 project in development).
 \t\t\t\t</p>
 
 \t\t\t</div>
@@ -472,9 +472,9 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t\t\t<div class=\"col l9 s12\">
 
 \t\t\t\t<p>
-\t\t\t\t\tWith two friends of my Two-year degree in computer science we create a non official game studio. We are all three
-\t\t\t\t\tpassionated by the creation, from cratch or by using industry reference game engine, of games that we would love to play. <br><br>
-\t\t\t\t\tIt started in 2015 and today our website reference our projects (4 released games and 1 project in development).
+\t\t\t\t\tWith two friends of my Two-year degree in computer science we created a non official game studio. We are all three
+\t\t\t\t\tpassionated by the creation, from scratch or by using industry reference game engine, of games that we would love to play. <br><br>
+\t\t\t\t\tIt started in 2014 and today our website reference our projects (4 released games and 1 project in development).
 \t\t\t\t</p>
 
 \t\t\t</div>

@@ -4,14 +4,34 @@
 	
 	{% set collection = page.collection() %}
 
-    {% for p in collection %}
-        
-    	<h1>{{ p.title }}</h1>
+	<div class="card-panel z-depth-2">
 
-    {% endfor %}
+		<h1><span class="red-text text-lighten-1">B</span>log posts</h1>
 
-    {% if config.plugins.pagination.enabled and collection.params.pagination %}
-	    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
-	{% endif %}
+	    {% for p in collection %}
+	        
+	        <div class="card-panel z-depth-0 blue-grey lighten-5">
+	        		<div class="row">
+	        			<div class="col s10">
+	        				<span class="flow-text">{{ p.title }}</span><br>
+
+	        				{% for tag in p.taxonomy.tag %}
+	        				    <span class="new badge blue-grey darken-4 white-text">{{ tag }}</span>
+	        				{% endfor %}
+	        			</div>
+
+	        			<div class="col s2 right-align">
+	        				<small>{{ p.date|nicetime(false) }}</small><br>
+	        			</div>
+	        		</div>
+	        		<a class="red-text text-lighten-1" href="{{ p.url }}">Read post <i class="fas fa-arrow-right"></i></a>
+	        </div>
+
+	    {% endfor %}
+
+	    {% if config.plugins.pagination.enabled and collection.params.pagination %}
+		    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+		{% endif %}
+	</div>
 
 {% endblock %}
