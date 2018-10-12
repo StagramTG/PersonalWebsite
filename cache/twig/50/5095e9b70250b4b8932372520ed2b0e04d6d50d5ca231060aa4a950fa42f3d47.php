@@ -48,37 +48,30 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
 \t        <div class=\"card-panel z-depth-0 blue-grey lighten-5\">
 \t        \t\t<div class=\"row\">
 \t        \t\t\t<div class=\"col s10\">
-\t        \t\t\t\t<span class=\"flow-text\">";
-            // line 16
-            echo $this->getAttribute($context["p"], "title", array());
-            echo "</span><br>
-
 \t        \t\t\t\t";
-            // line 18
-            $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute($context["p"], "taxonomy", array()), "tag", array()));
-            foreach ($context['_seq'] as $context["_key"] => $context["tag"]) {
-                // line 19
-                echo "\t        \t\t\t\t    <span class=\"chip\">";
-                echo $context["tag"];
+            // line 16
+            if ((twig_length_filter($this->env, $this->getAttribute($this->getAttribute($context["p"], "taxonomy", array()), "tag", array())) > 0)) {
+                // line 17
+                echo "\t        \t\t\t\t\t<span class=\"chip red lighten-1 white-text\">";
+                echo $this->getAttribute($this->getAttribute($this->getAttribute($context["p"], "taxonomy", array()), "tag", array()), 0, array(), "array");
                 echo "</span>
 \t        \t\t\t\t";
             }
-            $_parent = $context['_parent'];
-            unset($context['_seq'], $context['_iterated'], $context['_key'], $context['tag'], $context['_parent'], $context['loop']);
-            $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 21
-            echo "\t        \t\t\t</div>
+            // line 19
+            echo "\t        \t\t\t\t<span class=\"flow-text\">";
+            echo $this->getAttribute($context["p"], "title", array());
+            echo "</span>
+\t        \t\t\t</div>
 
 \t        \t\t\t<div class=\"col s2 right-align\">
 \t        \t\t\t\t<small>";
-            // line 24
+            // line 23
             echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->nicetimeFunc($this->getAttribute($context["p"], "date", array()), false);
             echo "</small><br>
 \t        \t\t\t</div>
 \t        \t\t</div>
 \t        \t\t<a class=\"red-text text-lighten-1\" href=\"";
-            // line 27
+            // line 26
             echo $this->getAttribute($context["p"], "url", array());
             echo "\">Read post <i class=\"fas fa-arrow-right\"></i></a>
 \t        </div>
@@ -88,18 +81,18 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 31
+        // line 30
         echo "
 \t    ";
-        // line 32
+        // line 31
         if (($this->getAttribute($this->getAttribute($this->getAttribute(($context["config"] ?? null), "plugins", array()), "pagination", array()), "enabled", array()) && $this->getAttribute($this->getAttribute(($context["collection"] ?? null), "params", array()), "pagination", array()))) {
-            // line 33
+            // line 32
             echo "\t\t    ";
-            $this->loadTemplate("partials/pagination.html.twig", "bloglist.html.twig", 33)->display(array_merge($context, array("base_url" => $this->getAttribute(($context["page"] ?? null), "url", array()), "pagination" => $this->getAttribute($this->getAttribute(($context["collection"] ?? null), "params", array()), "pagination", array()))));
-            // line 34
+            $this->loadTemplate("partials/pagination.html.twig", "bloglist.html.twig", 32)->display(array_merge($context, array("base_url" => $this->getAttribute(($context["page"] ?? null), "url", array()), "pagination" => $this->getAttribute($this->getAttribute(($context["collection"] ?? null), "params", array()), "pagination", array()))));
+            // line 33
             echo "\t\t";
         }
-        // line 35
+        // line 34
         echo "\t</div>
 
 ";
@@ -117,7 +110,7 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
 
     public function getDebugInfo()
     {
-        return array (  103 => 35,  100 => 34,  97 => 33,  95 => 32,  92 => 31,  82 => 27,  76 => 24,  71 => 21,  62 => 19,  58 => 18,  53 => 16,  47 => 12,  43 => 11,  36 => 6,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  96 => 34,  93 => 33,  90 => 32,  88 => 31,  85 => 30,  75 => 26,  69 => 23,  61 => 19,  55 => 17,  53 => 16,  47 => 12,  43 => 11,  36 => 6,  34 => 5,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -145,11 +138,10 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
 \t        <div class=\"card-panel z-depth-0 blue-grey lighten-5\">
 \t        \t\t<div class=\"row\">
 \t        \t\t\t<div class=\"col s10\">
-\t        \t\t\t\t<span class=\"flow-text\">{{ p.title }}</span><br>
-
-\t        \t\t\t\t{% for tag in p.taxonomy.tag %}
-\t        \t\t\t\t    <span class=\"chip\">{{ tag }}</span>
-\t        \t\t\t\t{% endfor %}
+\t        \t\t\t\t{% if p.taxonomy.tag|length > 0 %}
+\t        \t\t\t\t\t<span class=\"chip red lighten-1 white-text\">{{ p.taxonomy.tag[0] }}</span>
+\t        \t\t\t\t{% endif %}
+\t        \t\t\t\t<span class=\"flow-text\">{{ p.title }}</span>
 \t        \t\t\t</div>
 
 \t        \t\t\t<div class=\"col s2 right-align\">

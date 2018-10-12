@@ -1,0 +1,33 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+	<div class="card-panel">
+		<div class="section">
+			<h2>{{ page.title }}</h2>
+		</div>
+
+		<div class="divider"></div>
+
+		<div class="section">
+			<div class="row">
+				<div class="col l8 s12">
+	    			{{ page.content }}
+				</div>
+				<div class="col l4 s12">
+					<div class="card-panel z-depth-0 blue-grey lighten-5">
+						<div class="section">
+							<b>Publié le {{ page.date|date('d/m/Y') }}</b>
+						</div>
+						<div class="divider"></div>
+						<div class="section">
+							<b>Tags du poste</b><br><br>
+							{% for tag in page.taxonomy.tag %}
+							    <span class="chip red lighten-1 white-text">{{ tag }}</span>
+							{% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+{% endblock %}

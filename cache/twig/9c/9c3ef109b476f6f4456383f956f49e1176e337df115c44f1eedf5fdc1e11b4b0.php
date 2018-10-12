@@ -29,11 +29,68 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
     {
         // line 4
         echo "\t
-\t<div class=\"card-panel z-depth-2\">
-\t\t";
-        // line 6
+\t<div class=\"row\">
+
+\t\t<div class=\"col l6 m12\">
+\t\t\t<div class=\"card-panel z-depth-2\">
+\t\t\t\t";
+        // line 9
         echo $this->getAttribute(($context["page"] ?? null), "content", array());
         echo "
+\t\t\t</div>
+\t\t</div>
+
+\t\t<div class=\"col l6 m12\">
+\t\t\t<div class=\"card-panel z-depth-2\">
+\t\t\t\t<h5><span class=\"red-text text-lighten-1\">L</span>ast blog posts</h5>
+
+\t\t\t\t<table>
+\t\t\t\t\t<tbody>
+
+\t\t\t\t\t\t";
+        // line 20
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["page"] ?? null), "collection", array()));
+        foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
+            // line 21
+            echo "\t\t\t\t\t\t\t<tr>
+\t\t\t        \t\t\t<td>
+\t\t\t        \t\t\t\t";
+            // line 23
+            if ((twig_length_filter($this->env, $this->getAttribute($this->getAttribute($context["p"], "taxonomy", array()), "tag", array())) > 0)) {
+                // line 24
+                echo "\t\t\t        \t\t\t\t\t<span class=\"chip red lighten-1 white-text\">";
+                echo $this->getAttribute($this->getAttribute($this->getAttribute($context["p"], "taxonomy", array()), "tag", array()), 0, array(), "array");
+                echo "</span>
+\t\t\t        \t\t\t\t";
+            }
+            // line 26
+            echo "\t\t\t        \t\t\t\t<b>";
+            echo $this->getAttribute($context["p"], "title", array());
+            echo "</b> - <small>";
+            echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->nicetimeFunc($this->getAttribute($context["p"], "date", array()), false);
+            echo "</small><br>
+\t\t\t        \t\t\t</td>
+
+\t\t\t        \t\t\t<td>
+\t\t\t        \t\t\t\t<a class=\"red-text text-lighten-1\" href=\"";
+            // line 30
+            echo $this->getAttribute($context["p"], "url", array());
+            echo "\">Read post <i class=\"fas fa-arrow-right\"></i></a>
+\t\t\t        \t\t\t</td>
+\t\t\t\t        \t</tr>
+\t\t\t\t\t\t";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['p'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 34
+        echo "
+\t\t\t\t\t</tbody>
+\t\t\t\t</table>
+\t\t\t</div>
+\t\t</div>
+
 \t</div>
 
 \t<!-- Skills -->
@@ -208,7 +265,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t\t\t<div class=\"col l3 s12 center-align\">
 
 \t\t\t\t<img class=\"responsive-img\" src=\"";
-        // line 180
+        // line 213
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/dissidentstudio.webp");
         echo "\">
 
@@ -248,7 +305,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t\t\t<div class=\"col l6 s12 center-align\">
 
 \t\t\t\t<img class=\"responsive-img\" src=\"";
-        // line 217
+        // line 250
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/Ruins.png");
         echo "\">
 
@@ -273,7 +330,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 
     public function getDebugInfo()
     {
-        return array (  252 => 217,  212 => 180,  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  309 => 250,  269 => 213,  88 => 34,  78 => 30,  68 => 26,  62 => 24,  60 => 23,  56 => 21,  52 => 20,  38 => 9,  31 => 4,  28 => 3,  11 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -290,8 +347,41 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 
 {% block content %}
 \t
-\t<div class=\"card-panel z-depth-2\">
-\t\t{{ page.content }}
+\t<div class=\"row\">
+
+\t\t<div class=\"col l6 m12\">
+\t\t\t<div class=\"card-panel z-depth-2\">
+\t\t\t\t{{ page.content }}
+\t\t\t</div>
+\t\t</div>
+
+\t\t<div class=\"col l6 m12\">
+\t\t\t<div class=\"card-panel z-depth-2\">
+\t\t\t\t<h5><span class=\"red-text text-lighten-1\">L</span>ast blog posts</h5>
+
+\t\t\t\t<table>
+\t\t\t\t\t<tbody>
+
+\t\t\t\t\t\t{% for p in page.collection %}
+\t\t\t\t\t\t\t<tr>
+\t\t\t        \t\t\t<td>
+\t\t\t        \t\t\t\t{% if p.taxonomy.tag|length > 0 %}
+\t\t\t        \t\t\t\t\t<span class=\"chip red lighten-1 white-text\">{{ p.taxonomy.tag[0] }}</span>
+\t\t\t        \t\t\t\t{% endif %}
+\t\t\t        \t\t\t\t<b>{{ p.title }}</b> - <small>{{ p.date|nicetime(false) }}</small><br>
+\t\t\t        \t\t\t</td>
+
+\t\t\t        \t\t\t<td>
+\t\t\t        \t\t\t\t<a class=\"red-text text-lighten-1\" href=\"{{ p.url }}\">Read post <i class=\"fas fa-arrow-right\"></i></a>
+\t\t\t        \t\t\t</td>
+\t\t\t\t        \t</tr>
+\t\t\t\t\t\t{% endfor %}
+
+\t\t\t\t\t</tbody>
+\t\t\t\t</table>
+\t\t\t</div>
+\t\t</div>
+
 \t</div>
 
 \t<!-- Skills -->

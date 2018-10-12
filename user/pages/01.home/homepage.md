@@ -1,6 +1,14 @@
 ---
 title: Home
 body_classes: 'title-center title-h1h2'
+content:
+    items:
+      '@page': '/blog'
+    order:
+        by: date
+        dir: desc
+    limit: 3
+    pagination: false
 ---
 
 ### Hello, my name is Thomas !
