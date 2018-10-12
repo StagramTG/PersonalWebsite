@@ -198,6 +198,6 @@ class __TwigTemplate_999f32be7392957ef5a6041fc1f4d7c891a643bbe8d6da35dbe61645ee3
     {% endif %}
 </ul>
 
-", "partials/nav-quick-tray.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-quick-tray.html.twig");
+", "partials/nav-quick-tray.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav-quick-tray.html.twig");
     }
 }

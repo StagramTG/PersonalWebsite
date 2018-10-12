@@ -252,6 +252,6 @@ class __TwigTemplate_55b2749bde1e1529741e2ae7c470e8c916577ff023cf5e557dd3dfecb52
         </div>
     </div>
 {% endblock %}
-", "forms/fields/editor/editor.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\editor\\editor.html.twig");
+", "forms/fields/editor/editor.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\editor\\editor.html.twig");
     }
 }

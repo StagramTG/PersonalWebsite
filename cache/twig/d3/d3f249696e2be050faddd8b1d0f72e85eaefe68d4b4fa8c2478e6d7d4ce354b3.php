@@ -274,6 +274,6 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
     {% endfor %}
 </ul>
 
-", "partials/navigation.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\partials\\navigation.html.twig");
+", "partials/navigation.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\themes\\resu-folio\\templates\\partials\\navigation.html.twig");
     }
 }

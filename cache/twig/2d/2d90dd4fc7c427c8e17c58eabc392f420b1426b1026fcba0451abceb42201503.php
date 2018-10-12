@@ -161,6 +161,6 @@ class __TwigTemplate_600fc7482dd19e30cdc48e0d07ed887a41e1532737f1bb07a5811e64296
     {% endif %}
 
 {% endif %}
-", "forms/fields/section/section.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\section\\section.html.twig");
+", "forms/fields/section/section.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\section\\section.html.twig");
     }
 }

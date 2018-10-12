@@ -169,6 +169,6 @@ $context["paginate"], "isDeltaBorder", array())) {
 </ul>
 
 {% endif %}
-", "partials/pagination.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\partials\\pagination.html.twig");
+", "partials/pagination.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\themes\\resu-folio\\templates\\partials\\pagination.html.twig");
     }
 }

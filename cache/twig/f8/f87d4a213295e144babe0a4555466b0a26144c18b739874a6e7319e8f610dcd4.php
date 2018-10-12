@@ -265,6 +265,6 @@ class __TwigTemplate_0ad759aa2db14f5f7097722dd60943f57e4131c6da4f1902766ae58abb8
 {% endif %}
 </div>
 
-", "forms/fields/tabs/tabs.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\tabs\\tabs.html.twig");
+", "forms/fields/tabs/tabs.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\tabs\\tabs.html.twig");
     }
 }

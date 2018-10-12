@@ -117,6 +117,6 @@ class __TwigTemplate_0780808f50c7c606620432c59dff35b38d4a693f612dec3dcbbc13f0bce
 {% else %}
     <div class=\"padding\">You don't have sufficient access to view the dashboard...</div>
 {% endif %}
-", "partials/dashboard-pages.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\dashboard-pages.html.twig");
+", "partials/dashboard-pages.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\dashboard-pages.html.twig");
     }
 }

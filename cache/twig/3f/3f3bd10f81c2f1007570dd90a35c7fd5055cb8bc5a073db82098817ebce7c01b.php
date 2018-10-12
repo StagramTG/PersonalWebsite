@@ -82,6 +82,6 @@ class __TwigTemplate_20a3ba15d3c72f8d8cf48df02fde0155aac48ce027e2efde2be6f08d941
         return new Twig_Source("{% for meta in page.metadata %}
 <meta {% if meta.name %}name=\"{{ meta.name }}\" {% endif %}{% if meta.http_equiv %}http-equiv=\"{{ meta.http_equiv }}\" {% endif %}{% if meta.charset %}charset=\"{{ meta.charset }}\" {% endif %}{% if meta.property %}property=\"{{ meta.property }}\" {% endif %}{% if meta.content %}content=\"{{ meta.content }}\" {% endif %}/>
 {% endfor %}
-", "partials/metadata.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\partials\\metadata.html.twig");
+", "partials/metadata.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\themes\\resu-folio\\templates\\partials\\metadata.html.twig");
     }
 }

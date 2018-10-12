@@ -187,13 +187,13 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
         // line 56
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/profil.jpg");
         echo "\">
-                            <h6>Computer Science Student specialized in Computer Graphics</h6>
+                            <h6>Etudiant ingénieur en Informatique spécialisé en imagerie</h6>
                         </div>
 
                         <blockquote>
-                            In love with Computer Graphics Programming and video games creation, 
-                            I love to create things from scratch or by using first class industry Game Engines
-                            such as Unity3D.
+                            Passioné par la programmation graphique et la création de jeux vidéo,
+                            j'aime créer de nouvelles choses en partant de zéro ou en utilisant des
+                            moteurs de jeu de référence dans l'industrie comme Unity3D.
                         </blockquote>
 
                 </div>
@@ -211,7 +211,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
                           <tr>
                             <td><i class=\"fas fa-flag fa-lg red-text text-lighten-1\"></i></td>
-                            <td>French</td>
+                            <td>Français</td>
                           </tr>
 
                           <tr>
@@ -230,7 +230,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
                 <div class=\"card-panel z-depth-2\">
 
-                    <h5><span class=\"red-text text-lighten-1\">F</span>ind me on</h5>
+                    <h5><span class=\"red-text text-lighten-1\">R</span>éseaux sociaux</h5>
 
                     <br>
 
@@ -285,12 +285,12 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
         <div class=\"row\">
           <div class=\"col l6 s12\">
             <p class=\"grey-text text-lighten-4\">
-                This website is based on <a href=\"https://getgrav.org\">Grav CMS</a> and <a href=\"https://materializecss.com\">Materialize.</a><br>
-                Icons are from <a href=\"https://fontawesome.com\">Font awesome</a>
+                Ce site web est construit autour de <a href=\"https://getgrav.org\">Grav CMS</a> et <a href=\"https://materializecss.com\">Materialize.</a><br>
+                Les icônes proviennent de <a href=\"https://fontawesome.com\">Font awesome</a>
             </p>
           </div>
           <div class=\"col l4 offset-l2 s12\">
-            <h5 class=\"white-text\">Social networks</h5>
+            <h5 class=\"white-text\">Réseaux sociaux</h5>
             <ul>
               <li><a class=\"grey-text text-lighten-3\" href=\"https://github.com/StagramTG\">Github</a></li>
               <li><a class=\"grey-text text-lighten-3\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">Linked In</a></li>
@@ -301,7 +301,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
       </div>
       <div class=\"footer-copyright\">
         <div class=\"container\">
-        © 2018 All right reserved
+        Thomas Gredin © 2018 All right reserved
         </div>
       </div>
     </footer>
@@ -399,13 +399,13 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
                         <div class=\"center-align\">
                             <img class=\"responsive-img\" src=\"{{ url('theme://images/profil.jpg') }}\">
-                            <h6>Computer Science Student specialized in Computer Graphics</h6>
+                            <h6>Etudiant ingénieur en Informatique spécialisé en imagerie</h6>
                         </div>
 
                         <blockquote>
-                            In love with Computer Graphics Programming and video games creation, 
-                            I love to create things from scratch or by using first class industry Game Engines
-                            such as Unity3D.
+                            Passioné par la programmation graphique et la création de jeux vidéo,
+                            j'aime créer de nouvelles choses en partant de zéro ou en utilisant des
+                            moteurs de jeu de référence dans l'industrie comme Unity3D.
                         </blockquote>
 
                 </div>
@@ -423,7 +423,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
                           <tr>
                             <td><i class=\"fas fa-flag fa-lg red-text text-lighten-1\"></i></td>
-                            <td>French</td>
+                            <td>Français</td>
                           </tr>
 
                           <tr>
@@ -442,7 +442,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
                 <div class=\"card-panel z-depth-2\">
 
-                    <h5><span class=\"red-text text-lighten-1\">F</span>ind me on</h5>
+                    <h5><span class=\"red-text text-lighten-1\">R</span>éseaux sociaux</h5>
 
                     <br>
 
@@ -485,12 +485,12 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
         <div class=\"row\">
           <div class=\"col l6 s12\">
             <p class=\"grey-text text-lighten-4\">
-                This website is based on <a href=\"https://getgrav.org\">Grav CMS</a> and <a href=\"https://materializecss.com\">Materialize.</a><br>
-                Icons are from <a href=\"https://fontawesome.com\">Font awesome</a>
+                Ce site web est construit autour de <a href=\"https://getgrav.org\">Grav CMS</a> et <a href=\"https://materializecss.com\">Materialize.</a><br>
+                Les icônes proviennent de <a href=\"https://fontawesome.com\">Font awesome</a>
             </p>
           </div>
           <div class=\"col l4 offset-l2 s12\">
-            <h5 class=\"white-text\">Social networks</h5>
+            <h5 class=\"white-text\">Réseaux sociaux</h5>
             <ul>
               <li><a class=\"grey-text text-lighten-3\" href=\"https://github.com/StagramTG\">Github</a></li>
               <li><a class=\"grey-text text-lighten-3\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">Linked In</a></li>
@@ -501,7 +501,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
       </div>
       <div class=\"footer-copyright\">
         <div class=\"container\">
-        © 2018 All right reserved
+        Thomas Gredin © 2018 All right reserved
         </div>
       </div>
     </footer>
@@ -513,6 +513,6 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
 </body>
 </html>
-", "partials/base.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\partials\\base.html.twig");
+", "partials/base.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\themes\\resu-folio\\templates\\partials\\base.html.twig");
     }
 }

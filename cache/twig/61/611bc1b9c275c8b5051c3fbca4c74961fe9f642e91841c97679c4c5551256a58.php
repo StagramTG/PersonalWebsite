@@ -144,6 +144,6 @@ class __TwigTemplate_a769184b0f9cc0a722ed08eeae3484ac8fb4a5d531702568f7dda8733dd
     {% include 'partials/modal-update-packages.html.twig' with { type: 'plugin' } %}
 
 {% endif %}
-", "partials/dashboard-maintenance.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\dashboard-maintenance.html.twig");
+", "partials/dashboard-maintenance.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\dashboard-maintenance.html.twig");
     }
 }

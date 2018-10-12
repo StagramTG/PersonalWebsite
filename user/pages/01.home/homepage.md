@@ -1,9 +1,9 @@
 ---
-title: Home
+title: Accueil
 body_classes: 'title-center title-h1h2'
 content:
     items:
-      '@page': '/blog'
+        '@page': /blog
     order:
         by: date
         dir: desc
@@ -11,13 +11,6 @@ content:
     pagination: false
 ---
 
-### Hello, my name is Thomas !
+#### Recherche un stage de fin d'étude
 
-I'm a Computer Science engineer student specialized in Computer Graphics, picture processing and Virtual/Augmented reality.
-Welcome on my personnal website, here you can find all interesting information about me and my work.
-
-#### Currently seeking for a final internship !
-
-I would like to work in a place and in a company where I can be happy and improve my skills. My dream is to work in Montréal, Québec, in a Game Studio. This internship is an opportunity to come and live in this city and maybe, if I feel good, call this place home.
-
-If there is a free place for an intern in your company, please send me an email ! 
+Actuellement en dernière année de cursus ingénieur en informatique, spécialité image, intéractions et réalité virtuelle (I2RV), à l'université technologique de Belfort Montbéliard je suis à la recherche d'un stage de fin d'études. J'aimerais beaucoup le réaliser au Québec, à Montréal qui est une ville ou l'industrie du jeu vidéo est très présente et c'est dans cette voie que je souhaite me diriger pour confirmer mes connaissances et acquis développés durant mon cursus.

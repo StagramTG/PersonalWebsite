@@ -361,6 +361,6 @@ class __TwigTemplate_11fbdf62945a850ab101fd50d080ebef2602489a354fef7cf278e2c41c4
         {%- endif -%}
     </div>
 {% endblock %}
-", "dashboard.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\dashboard.html.twig");
+", "dashboard.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\dashboard.html.twig");
     }
 }

@@ -370,6 +370,6 @@ class __TwigTemplate_88010756ffc076c05d8b74fc6a75b36654a5e1fdd7fed41c41c2178b20e
     {% endif %}
     {% include 'partials/modal-changes-detected.html.twig' %}
 {% endblock %}
-", "config.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\config.html.twig");
+", "config.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\config.html.twig");
     }
 }

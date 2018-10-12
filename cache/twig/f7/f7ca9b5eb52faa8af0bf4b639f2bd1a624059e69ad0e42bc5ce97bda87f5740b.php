@@ -81,6 +81,6 @@ class __TwigTemplate_863021f95498289327eaa3a881651699418403b165c613cace7df3124fa
 
 {% include 'partials/javascripts-extra.html.twig' ignore missing %}
 {% endif %}
-", "partials/javascripts.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\javascripts.html.twig");
+", "partials/javascripts.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\javascripts.html.twig");
     }
 }

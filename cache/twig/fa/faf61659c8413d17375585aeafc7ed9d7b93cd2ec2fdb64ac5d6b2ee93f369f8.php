@@ -138,6 +138,6 @@ class __TwigTemplate_40ebfb042e341019b09fef7ae0ca37f95f81828c20ab808d7480a06ad30
 \t\t\t</div>
 \t\t</div>
     </div>
-{% endblock %}", "blogpost.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\blogpost.html.twig");
+{% endblock %}", "blogpost.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\themes\\resu-folio\\templates\\blogpost.html.twig");
     }
 }

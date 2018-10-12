@@ -1637,6 +1637,6 @@ $context["p"], "published", array())) ? (($this->env->getExtension('Grav\Plugin\
     \$('.admin-pages .form-tabs .tabs-nav').css('margin-right', (\$('#admin-topbar').width() + 20) + 'px');
 </script>
 {% endblock %}
-", "pages.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\pages.html.twig");
+", "pages.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\pages.html.twig");
     }
 }

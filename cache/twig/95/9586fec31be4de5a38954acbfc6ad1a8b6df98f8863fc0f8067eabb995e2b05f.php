@@ -391,6 +391,6 @@ class __TwigTemplate_307e9641f1664fec1a36edb16e625804994d49080b5588ae1d1bdae2e1c
         </div>
     </nav>
 {% endif %}
-", "partials/nav.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav.html.twig");
+", "partials/nav.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\partials\\nav.html.twig");
     }
 }

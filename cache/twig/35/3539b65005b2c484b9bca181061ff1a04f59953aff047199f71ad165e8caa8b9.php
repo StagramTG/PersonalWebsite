@@ -37,6 +37,6 @@ class __TwigTemplate_a52e3339254f956a5b5bc65a3beb7dad5e0bcc8a5cf3d774cf703403208
 
     public function getSourceContext()
     {
-        return new Twig_Source("", "empty.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\empty.html.twig");
+        return new Twig_Source("", "empty.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\empty.html.twig");
     }
 }

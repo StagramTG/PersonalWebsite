@@ -62,6 +62,6 @@ class __TwigTemplate_455596b062aaaf2663e24f6c5c27367094b8ae0635215fe9484910c976d
 {% if xss_status is not empty %}
     <div class=\"notice alert\">{{ \"PLUGIN_ADMIN.XSS_ISSUE\"|tu([xss_status])|raw }}</div>
 {% endif %}
-", "forms/fields/xss/xss.html.twig", "C:\\laragon\\www\\grav-admin\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\xss\\xss.html.twig");
+", "forms/fields/xss/xss.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\plugins\\admin\\themes\\grav\\templates\\forms\\fields\\xss\\xss.html.twig");
     }
 }

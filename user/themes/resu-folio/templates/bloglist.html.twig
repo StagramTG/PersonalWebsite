@@ -6,7 +6,7 @@
 
 	<div class="card-panel z-depth-2">
 
-		<h1><span class="red-text text-lighten-1">B</span>log posts</h1>
+		<h1><span class="red-text text-lighten-1">A</span>rticles</h1>
 
 	    {% for p in collection %}
 	        
@@ -23,7 +23,7 @@
 	        				<small>{{ p.date|nicetime(false) }}</small><br>
 	        			</div>
 	        		</div>
-	        		<a class="red-text text-lighten-1" href="{{ p.url }}">Read post <i class="fas fa-arrow-right"></i></a>
+	        		<a class="red-text text-lighten-1" href="{{ p.url }}">Lire <i class="fas fa-arrow-right"></i></a>
 	        </div>
 
 	    {% endfor %}

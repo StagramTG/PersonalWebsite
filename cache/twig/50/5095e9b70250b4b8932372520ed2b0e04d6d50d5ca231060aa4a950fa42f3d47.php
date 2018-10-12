@@ -36,7 +36,7 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
         echo "
 \t<div class=\"card-panel z-depth-2\">
 
-\t\t<h1><span class=\"red-text text-lighten-1\">B</span>log posts</h1>
+\t\t<h1><span class=\"red-text text-lighten-1\">A</span>rticles</h1>
 
 \t    ";
         // line 11
@@ -73,7 +73,7 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
 \t        \t\t<a class=\"red-text text-lighten-1\" href=\"";
             // line 26
             echo $this->getAttribute($context["p"], "url", array());
-            echo "\">Read post <i class=\"fas fa-arrow-right\"></i></a>
+            echo "\">Lire <i class=\"fas fa-arrow-right\"></i></a>
 \t        </div>
 
 \t    ";
@@ -131,7 +131,7 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
 
 \t<div class=\"card-panel z-depth-2\">
 
-\t\t<h1><span class=\"red-text text-lighten-1\">B</span>log posts</h1>
+\t\t<h1><span class=\"red-text text-lighten-1\">A</span>rticles</h1>
 
 \t    {% for p in collection %}
 \t        
@@ -148,7 +148,7 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
 \t        \t\t\t\t<small>{{ p.date|nicetime(false) }}</small><br>
 \t        \t\t\t</div>
 \t        \t\t</div>
-\t        \t\t<a class=\"red-text text-lighten-1\" href=\"{{ p.url }}\">Read post <i class=\"fas fa-arrow-right\"></i></a>
+\t        \t\t<a class=\"red-text text-lighten-1\" href=\"{{ p.url }}\">Lire <i class=\"fas fa-arrow-right\"></i></a>
 \t        </div>
 
 \t    {% endfor %}
@@ -158,6 +158,6 @@ class __TwigTemplate_66f2f8bdc3e69f242a7bf292321439ad4432b6cefcea871bc0c19fd3fc6
 \t\t{% endif %}
 \t</div>
 
-{% endblock %}", "bloglist.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\bloglist.html.twig");
+{% endblock %}", "bloglist.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\themes\\resu-folio\\templates\\bloglist.html.twig");
     }
 }
