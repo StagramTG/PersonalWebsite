@@ -17,7 +17,7 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
     {
         // line 24
         echo "
-<ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">
+<ul id=\"nav-mobile\" class=\"navbar-nav ml-auto navbar-right\">
     ";
         // line 26
         if ($this->getAttribute($this->getAttribute(($context["theme_config"] ?? null), "dropdown", array()), "enabled", array())) {
@@ -41,13 +41,11 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
                 echo "            ";
                 $context["current_page"] = ((($this->getAttribute($context["page"], "active", array()) || $this->getAttribute($context["page"], "activeChild", array()))) ? ("active") : (""));
                 // line 34
-                echo "            <li class=\"";
-                echo ($context["current_page"] ?? null);
-                echo "\">
+                echo "            <li class=\"nav-item active\">
                 <a href=\"";
                 // line 35
                 echo $this->getAttribute($context["page"], "url", array());
-                echo "\">
+                echo "\" class=\"nav-link\">
                     ";
                 // line 36
                 if ($this->getAttribute($this->getAttribute($context["page"], "header", array()), "icon", array())) {
@@ -79,7 +77,7 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
             <a href=\"";
             // line 44
             echo $this->getAttribute($context["mitem"], "url", array());
-            echo "\">
+            echo "\" class=\"nav-link\">
                 ";
             // line 45
             if ($this->getAttribute($context["mitem"], "icon", array())) {
@@ -128,13 +126,13 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
                 echo "        ";
                 if (($this->getAttribute($this->getAttribute($this->getAttribute($context["p"], "children", array()), "visible", array()), "count", array()) > 0)) {
                     // line 5
-                    echo "            <li class=\"has-children ";
+                    echo "            <li class=\"nav-item ";
                     echo ($context["current_page"] ?? null);
                     echo "\">
                 <a href=\"";
                     // line 6
                     echo $this->getAttribute($context["p"], "url", array());
-                    echo "\">
+                    echo "\" class=\"nav-link\">
                     ";
                     // line 7
                     if ($this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array())) {
@@ -157,13 +155,13 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
         ";
                 } else {
                     // line 15
-                    echo "            <li class=\"";
+                    echo "            <li class=\"nav-item ";
                     echo ($context["current_page"] ?? null);
                     echo "\">
                 <a href=\"";
                     // line 16
                     echo $this->getAttribute($context["p"], "url", array());
-                    echo "\">
+                    echo "\" class=\"nav-link\">
                     ";
                     // line 17
                     if ($this->getAttribute($this->getAttribute($context["p"], "header", array()), "icon", array())) {
@@ -210,7 +208,7 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
 
     public function getDebugInfo()
     {
-        return array (  183 => 22,  175 => 18,  169 => 17,  165 => 16,  160 => 15,  153 => 11,  146 => 8,  140 => 7,  136 => 6,  131 => 5,  128 => 4,  125 => 3,  120 => 2,  108 => 1,  102 => 50,  91 => 46,  85 => 45,  81 => 44,  78 => 43,  73 => 42,  70 => 41,  59 => 37,  53 => 36,  49 => 35,  44 => 34,  41 => 33,  37 => 32,  34 => 31,  28 => 28,  25 => 27,  23 => 26,  19 => 24,);
+        return array (  181 => 22,  173 => 18,  167 => 17,  163 => 16,  158 => 15,  151 => 11,  144 => 8,  138 => 7,  134 => 6,  129 => 5,  126 => 4,  123 => 3,  118 => 2,  106 => 1,  100 => 50,  89 => 46,  83 => 45,  79 => 44,  76 => 43,  71 => 42,  68 => 41,  57 => 37,  51 => 36,  47 => 35,  44 => 34,  41 => 33,  37 => 32,  34 => 31,  28 => 28,  25 => 27,  23 => 26,  19 => 24,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -227,8 +225,8 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
         {% if p.children.visible.count > 0 %}
-            <li class=\"has-children {{ current_page }}\">
-                <a href=\"{{ p.url }}\">
+            <li class=\"nav-item {{ current_page }}\">
+                <a href=\"{{ p.url }}\" class=\"nav-link\">
                     {% if p.header.icon %}<i class=\"fa fa-{{ p.header.icon }}\"></i>{% endif %}
                     {{ p.menu }}
                 </a>
@@ -237,8 +235,8 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
                 </ul>
             </li>
         {% else %}
-            <li class=\"{{ current_page }}\">
-                <a href=\"{{ p.url }}\">
+            <li class=\"nav-item {{ current_page }}\">
+                <a href=\"{{ p.url }}\" class=\"nav-link\">
                     {% if p.header.icon %}<i class=\"fa fa-{{ p.header.icon }}\"></i>{% endif %}
                     {{ p.menu }}
                 </a>
@@ -247,7 +245,7 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
     {% endfor %}
 {% endmacro %}
 
-<ul id=\"nav-mobile\" class=\"right hide-on-med-and-down\">
+<ul id=\"nav-mobile\" class=\"navbar-nav ml-auto navbar-right\">
     {% if theme_config.dropdown.enabled %}
 
         {{ _self.loop(pages) }}
@@ -256,8 +254,8 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
 
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-            <li class=\"{{ current_page }}\">
-                <a href=\"{{ page.url }}\">
+            <li class=\"nav-item active\">
+                <a href=\"{{ page.url }}\" class=\"nav-link\">
                     {% if page.header.icon %}<i class=\"fa fa-{{ page.header.icon }}\"></i>{% endif %}
                     {{ page.menu }}
                 </a>
@@ -266,7 +264,7 @@ class __TwigTemplate_3ba8d34afdc003b7513c301a6a9e185ddd7c78db1a70aa36b1c100f0525
     {% endif %}
     {% for mitem in site.menu %}
         <li>
-            <a href=\"{{ mitem.url }}\">
+            <a href=\"{{ mitem.url }}\" class=\"nav-link\">
                 {% if mitem.icon %}<i class=\"fa fa-{{ mitem.icon }}\"></i>{% endif %}
                 {{ mitem.text }}
             </a>

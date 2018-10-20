@@ -4,33 +4,55 @@
 	
 	{% set collection = page.collection() %}
 
-	<div class="card-panel z-depth-2">
+	<div class="card shadow-sm mt-lg-0 mt-sm-3">
 
-		<h1><span class="red-text text-lighten-1">A</span>rticles</h1>
+		<div class="card-body">
 
-	    {% for p in collection %}
-	        
-	        <div class="card-panel z-depth-0 blue-grey lighten-5">
-	        		<div class="row">
-	        			<div class="col s10">
-	        				{% if p.taxonomy.tag|length > 0 %}
-	        					<span class="chip red lighten-1 white-text">{{ p.taxonomy.tag[0] }}</span>
-	        				{% endif %}
-	        				<span class="flow-text">{{ p.title }}</span>
-	        			</div>
+			<h1 class="card-title"><span class="accentuation">A</span>rticles</h1>
 
-	        			<div class="col s2 right-align">
-	        				<small>{{ p.date|nicetime(false) }}</small><br>
-	        			</div>
-	        		</div>
-	        		<a class="red-text text-lighten-1" href="{{ p.url }}">Lire <i class="fas fa-arrow-right"></i></a>
-	        </div>
+		    {% for p in collection %}
+		        
+		        <div class="card">
+		        	
+		        	<div class="card-body">
 
-	    {% endfor %}
+		        		<div class="row">
+		        			<div class="col-sm-10">
+	        					<h5 class="card-title">
+	        						{{ p.title }}
+	        					</h5>
+		        			</div>
 
-	    {% if config.plugins.pagination.enabled and collection.params.pagination %}
-		    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
-		{% endif %}
+		        			<div class="col-sm-2 s2 text-right">
+		        				<a class="card-link accentuation" href="{{ p.url }}">Lire <i class="fas fa-arrow-right"></i></a>
+		        			</div>
+		        		</div>
+		        	</div>
+
+		        	<div class="card-footer">
+		        		<div class="row">
+		        			<div class="col">
+				        		{% if p.taxonomy.tag|length > 0 %}
+				        	    	<span class="badge accentation">{{ p.taxonomy.tag[0] }}</span>
+				        	    {% endif %}
+				        	</div>
+
+					        <div class="col text-right">
+					        	<small class="text-muted">{{ p.date|nicetime(false) }}</small>
+					        </div>
+		        		</div>
+				    </div>
+
+		        </div>
+
+		    {% endfor %}
+
+		    {% if config.plugins.pagination.enabled and collection.params.pagination %}
+			    {% include 'partials/pagination.html.twig' with {'base_url':page.url, 'pagination':collection.params.pagination} %}
+			{% endif %}
+
+		</div>
+
 	</div>
 
 {% endblock %}

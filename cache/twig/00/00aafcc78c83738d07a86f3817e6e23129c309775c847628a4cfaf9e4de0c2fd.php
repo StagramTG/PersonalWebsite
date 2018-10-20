@@ -71,6 +71,6 @@ class __TwigTemplate_88851bd785c040a04a2a38b0ffa2ba8f085117ebdcb254daa10a9a202bb
         {{ page.content }}
     </div>
 {% endblock %}
-", "error.html.twig", "C:\\laragon\\www\\grav-admin\\user\\themes\\resu-folio\\templates\\error.html.twig");
+", "error.html.twig", "D:\\Programs\\laragon\\www\\PersonalWebsite\\user\\themes\\resu-folio\\templates\\error.html.twig");
     }
 }

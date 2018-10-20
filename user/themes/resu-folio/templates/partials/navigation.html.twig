@@ -2,8 +2,8 @@
     {% for p in page.children.visible %}
         {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
         {% if p.children.visible.count > 0 %}
-            <li class="has-children {{ current_page }}">
-                <a href="{{ p.url }}">
+            <li class="nav-item {{ current_page }}">
+                <a href="{{ p.url }}" class="nav-link">
                     {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
                     {{ p.menu }}
                 </a>
@@ -12,8 +12,8 @@
                 </ul>
             </li>
         {% else %}
-            <li class="{{ current_page }}">
-                <a href="{{ p.url }}">
+            <li class="nav-item {{ current_page }}">
+                <a href="{{ p.url }}" class="nav-link">
                     {% if p.header.icon %}<i class="fa fa-{{ p.header.icon }}"></i>{% endif %}
                     {{ p.menu }}
                 </a>
@@ -22,7 +22,7 @@
     {% endfor %}
 {% endmacro %}
 
-<ul id="nav-mobile" class="right hide-on-med-and-down">
+<ul id="nav-mobile" class="navbar-nav ml-auto navbar-right">
     {% if theme_config.dropdown.enabled %}
 
         {{ _self.loop(pages) }}
@@ -31,8 +31,8 @@
 
         {% for page in pages.children.visible %}
             {% set current_page = (page.active or page.activeChild) ? 'active' : '' %}
-            <li class="{{ current_page }}">
-                <a href="{{ page.url }}">
+            <li class="nav-item active">
+                <a href="{{ page.url }}" class="nav-link">
                     {% if page.header.icon %}<i class="fa fa-{{ page.header.icon }}"></i>{% endif %}
                     {{ page.menu }}
                 </a>
@@ -41,7 +41,7 @@
     {% endif %}
     {% for mitem in site.menu %}
         <li>
-            <a href="{{ mitem.url }}">
+            <a href="{{ mitem.url }}" class="nav-link">
                 {% if mitem.icon %}<i class="fa fa-{{ mitem.icon }}"></i>{% endif %}
                 {{ mitem.text }}
             </a>

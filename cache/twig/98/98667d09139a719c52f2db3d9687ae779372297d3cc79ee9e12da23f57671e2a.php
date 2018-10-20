@@ -46,22 +46,22 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 ";
         // line 34
         $this->displayBlock('header', $context, $blocks);
-        // line 46
+        // line 52
         echo "
 ";
-        // line 47
+        // line 53
         $this->displayBlock('body', $context, $blocks);
-        // line 136
+        // line 153
         echo "
 ";
-        // line 137
+        // line 154
         $this->displayBlock('footer', $context, $blocks);
-        // line 164
+        // line 181
         echo "
 ";
-        // line 165
+        // line 182
         $this->displayBlock('bottom', $context, $blocks);
-        // line 168
+        // line 185
         echo "
 </body>
 </html>
@@ -98,19 +98,18 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
         echo $this->getAttribute(($context["page"] ?? null), "url", array(0 => true, 1 => true), "method");
         echo "\" />
 
-    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.3.1/css/all.css\" integrity=\"sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU\" crossorigin=\"anonymous\">
 
     ";
-        // line 19
+        // line 18
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 23
+        // line 22
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "css", array(), "method");
         echo "
 
     ";
-        // line 25
+        // line 24
         $this->displayBlock('javascripts', $context, $blocks);
         // line 28
         echo "    ";
@@ -120,25 +119,28 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 ";
     }
 
-    // line 19
+    // line 18
     public function block_stylesheets($context, array $blocks = array())
     {
+        // line 19
+        echo "        ";
+        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/bootstrap.min.css", 1 => 100), "method");
         // line 20
         echo "        ";
-        $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css", 1 => 100), "method");
-        // line 21
-        echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addCss", array(0 => "theme://css/custom.css", 1 => 99), "method");
-        // line 22
+        // line 21
         echo "    ";
     }
 
-    // line 25
+    // line 24
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 26
+        // line 25
         echo "        ";
         $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "jquery", 1 => 100), "method");
+        // line 26
+        echo "        ";
+        $this->getAttribute(($context["assets"] ?? null), "addJs", array(0 => "theme://js/bootstrap.min.js", 1 => 100), "method");
         // line 27
         echo "    ";
     }
@@ -147,140 +149,157 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
     public function block_header($context, array $blocks = array())
     {
         // line 35
-        echo "    <nav class=\"blue-grey darken-4\">
-        <div class=\"nav-wrapper container\">
-        <a href=\"/\" class=\"brand-logo\"><span class=\"red-text text-lighten-1\">T</span>homas <span class=\"red-text text-lighten-1\">G</span>redin</a>
-
-            ";
-        // line 39
-        $this->displayBlock('header_navigation', $context, $blocks);
-        // line 42
         echo "
-        </div>
+    <nav class=\"navbar navbar-expand-lg navbar-dark\">
+      <div class=\"container\">
+          <a class=\"navbar-brand\" href=\"/\"><span class=\"accentuation\">T</span>homas <span class=\"accentuation\">G</span>redin</a>
+
+          <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <i class=\"fas fa-bars\"></i>
+          </button>
+          <div class=\"collapse navbar-collapse\" id=\"navbarText\">
+                ";
+        // line 44
+        $this->displayBlock('header_navigation', $context, $blocks);
+        // line 47
+        echo "          </div>
+      </div>
     </nav>
+
 ";
     }
 
-    // line 39
+    // line 44
     public function block_header_navigation($context, array $blocks = array())
     {
-        // line 40
+        // line 45
+        echo "                    ";
+        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 45)->display($context);
+        // line 46
         echo "                ";
-        $this->loadTemplate("partials/navigation.html.twig", "partials/base.html.twig", 40)->display($context);
-        // line 41
-        echo "            ";
     }
 
-    // line 47
+    // line 53
     public function block_body($context, array $blocks = array())
     {
-        // line 48
-        echo "    <section id=\"body\">
+        // line 54
+        echo "    <div class=\"container-fluid\">
 
-        <div class=\"row\">
+        <div class=\"mt-3\"></div>
+        <section id=\"body\">
 
-            <div class=\"col l3 m12\">
-                <div class=\"card-panel z-depth-2\">
+            <div class=\"row\">
 
-                        <div class=\"center-align\">
-                            <img class=\"responsive-img\" src=\"";
-        // line 56
+                <div class=\"col-md-12 col-lg-3\">
+                    <div class=\"card shadow-sm\">
+                        <img class=\"card-img-top\" src=\"";
+        // line 63
         echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->urlFunc("theme://images/profil.jpg");
         echo "\">
-                            <h6>Etudiant ingénieur en Informatique spécialisé en imagerie</h6>
-                        </div>
 
-                        <blockquote>
-                            Passioné par la programmation graphique et la création de jeux vidéo,
-                            j'aime créer de nouvelles choses en partant de zéro ou en utilisant des
-                            moteurs de jeu de référence dans l'industrie comme Unity3D.
-                        </blockquote>
-
-                </div>
-
-                <div class=\"card-panel z-depth-2\">
-
-                    <h5><span class=\"red-text text-lighten-1\">I</span>nformation</h5>
-
-                    <table>
-                        <tbody>
-                          <tr>
-                            <td><i class=\"fas fa-home fa-lg red-text text-lighten-1\"></i></td>
-                            <td>Belfort, France</td>
-                          </tr>
-
-                          <tr>
-                            <td><i class=\"fas fa-flag fa-lg red-text text-lighten-1\"></i></td>
-                            <td>Français</td>
-                          </tr>
-
-                          <tr>
-                            <td><i class=\"fas fa-phone fa-lg red-text text-lighten-1\"></i></td>
-                            <td>(+33)669 606 859</td>
-                          </tr>
-
-                          <tr>
-                            <td><i class=\"fas fa-envelope fa-lg red-text text-lighten-1\"></i></td>
-                            <td>thomas.gredin@utbm.fr</td>
-                          </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-
-                <div class=\"card-panel z-depth-2\">
-
-                    <h5><span class=\"red-text text-lighten-1\">R</span>éseaux sociaux</h5>
-
-                    <br>
-
-                    <div class=\"row\">
-
-                        <div class=\"col s4 center-align\">
-                            <a class=\"\" href=\"https://github.com/StagramTG\">
-                                <i class=\"fab fa-github fa-3x black-text\"></i>
-                            </a>
-                        </div>
-
-                        <div class=\"col s4 center-align\">
-                            <a class=\"\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">
-                                <i class=\"fab fa-linkedin fa-3x blue-text text-darken-2\"></i>
-                            </a>
-                        </div>
-
-                        <div class=\"col s4 center-align\">
-                            <a class=\"\" href=\"https://twitter.com/GredinTom\">
-                                <i class=\"fab fa-twitter fa-3x\"></i>
-                            </a>
+                        <div class=\"card-body\">
+                            <h6 class=\"card-title text-center\">Etudiant ingénieur en Informatique spécialisé en imagerie</h6>
+                            <p>
+                                Passioné par la programmation graphique et la création de jeux vidéo,
+                                j'aime créer de nouvelles choses en partant de zéro ou en utilisant des
+                                moteurs de jeu de référence dans l'industrie comme Unity3D.
+                            </p>
                         </div>
                     </div>
 
+                    <div class=\"card mt-3 shadow-sm\">
+
+                        <div class=\"card-body\">
+
+                            <h5 class=\"card-title\"><span class=\"accentuation\">I</span>nformation</h5>
+
+                            <table class=\"table table-borderless\">
+                                <tbody>
+                                  <tr>
+                                    <td><i class=\"fas fa-home fa-lg accentuation\"></i></td>
+                                    <td>Belfort, France</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td><i class=\"fas fa-flag fa-lg accentuation\"></i></td>
+                                    <td>Français</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td><i class=\"fas fa-phone fa-lg accentuation\"></i></td>
+                                    <td>(+33)669 606 859</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td><i class=\"fas fa-envelope fa-lg accentuation\"></i></td>
+                                    <td>thomas.gredin@utbm.fr</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                    <div class=\"card mt-3 shadow-sm\">
+
+                        <div class=\"card-body\">
+
+                            <h5><span class=\"accentuation\">R</span>éseaux sociaux</h5>
+
+                            <br>
+
+                            <div class=\"row\">
+
+                                <div class=\"col text-center\">
+                                    <a class=\"text-dark\" href=\"https://github.com/StagramTG\">
+                                        <i class=\"fab fa-github fa-3x black-text\"></i>
+                                    </a>
+                                </div>
+
+                                <div class=\"col text-center\">
+                                    <a class=\"text-info\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">
+                                        <i class=\"fab fa-linkedin fa-3x blue-text text-darken-2\"></i>
+                                    </a>
+                                </div>
+
+                                <div class=\"col text-center\">
+                                    <a class=\"text-primary\" href=\"https://twitter.com/GredinTom\">
+                                        <i class=\"fab fa-twitter fa-3x\"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>  
+
+                    </div>
                 </div>
+
+                <div class=\"col-md-12 col-lg-9 mb-3\">
+                    ";
+        // line 144
+        $this->displayBlock('content', $context, $blocks);
+        // line 145
+        echo "                </div>
+
             </div>
 
-            <div class=\"col l9 m12\">
-                ";
-        // line 129
-        $this->displayBlock('content', $context, $blocks);
-        // line 130
-        echo "            </div>
+        </section>
 
-        </div>
-
-    </section>
+    </div>
 ";
     }
 
-    // line 129
+    // line 144
     public function block_content($context, array $blocks = array())
     {
     }
 
-    // line 137
+    // line 154
     public function block_footer($context, array $blocks = array())
     {
-        // line 138
-        echo "    <footer class=\"page-footer blue-grey darken-4\">
+        // line 155
+        echo "    <!-- <footer class=\"page-footer blue-grey darken-4\">
       <div class=\"container\">
         <div class=\"row\">
           <div class=\"col l6 s12\">
@@ -304,14 +323,14 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
         Thomas Gredin © 2018 All right reserved
         </div>
       </div>
-    </footer>
+    </footer> -->
 ";
     }
 
-    // line 165
+    // line 182
     public function block_bottom($context, array $blocks = array())
     {
-        // line 166
+        // line 183
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -330,7 +349,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
     public function getDebugInfo()
     {
-        return array (  315 => 166,  312 => 165,  283 => 138,  280 => 137,  275 => 129,  266 => 130,  264 => 129,  188 => 56,  178 => 48,  175 => 47,  171 => 41,  168 => 40,  165 => 39,  158 => 42,  156 => 39,  150 => 35,  147 => 34,  143 => 27,  140 => 26,  137 => 25,  133 => 22,  130 => 21,  127 => 20,  124 => 19,  116 => 28,  114 => 25,  108 => 23,  106 => 19,  98 => 14,  94 => 13,  91 => 12,  89 => 11,  78 => 7,  75 => 6,  72 => 5,  65 => 168,  63 => 165,  60 => 164,  58 => 137,  55 => 136,  53 => 47,  50 => 46,  48 => 34,  43 => 32,  40 => 31,  38 => 5,  33 => 3,  30 => 2,  28 => 1,);
+        return array (  334 => 183,  331 => 182,  302 => 155,  299 => 154,  294 => 144,  283 => 145,  281 => 144,  197 => 63,  186 => 54,  183 => 53,  179 => 46,  176 => 45,  173 => 44,  165 => 47,  163 => 44,  152 => 35,  149 => 34,  145 => 27,  142 => 26,  139 => 25,  136 => 24,  132 => 21,  129 => 20,  126 => 19,  123 => 18,  115 => 28,  113 => 24,  107 => 22,  105 => 18,  98 => 14,  94 => 13,  91 => 12,  89 => 11,  78 => 7,  75 => 6,  72 => 5,  65 => 185,  63 => 182,  60 => 181,  58 => 154,  55 => 153,  53 => 53,  50 => 52,  48 => 34,  43 => 32,  40 => 31,  38 => 5,  33 => 3,  30 => 2,  28 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -358,17 +377,17 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
     <link rel=\"icon\" type=\"image/png\" href=\"{{ url('theme://images/logo.png') }}\" />
     <link rel=\"canonical\" href=\"{{ page.url(true, true) }}\" />
 
-    <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">
     <link rel=\"stylesheet\" href=\"https://use.fontawesome.com/releases/v5.3.1/css/all.css\" integrity=\"sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU\" crossorigin=\"anonymous\">
 
     {% block stylesheets %}
-        {% do assets.addCss('https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css', 100) %}
+        {% do assets.addCss('theme://css/bootstrap.min.css', 100) %}
         {% do assets.addCss('theme://css/custom.css', 99) %}
     {% endblock %}
     {{ assets.css() }}
 
     {% block javascripts %}
         {% do assets.addJs('jquery', 100) %}
+        {% do assets.addJs('theme://js/bootstrap.min.js', 100) %}
     {% endblock %}
     {{ assets.js() }}
 
@@ -377,110 +396,127 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 <body id=\"top\" class=\"{{ page.header.body_classes }} blue-grey lighten-5\">
 
 {% block header %}
-    <nav class=\"blue-grey darken-4\">
-        <div class=\"nav-wrapper container\">
-        <a href=\"/\" class=\"brand-logo\"><span class=\"red-text text-lighten-1\">T</span>homas <span class=\"red-text text-lighten-1\">G</span>redin</a>
 
-            {% block header_navigation %}
-                {% include 'partials/navigation.html.twig' %}
-            {% endblock %}
+    <nav class=\"navbar navbar-expand-lg navbar-dark\">
+      <div class=\"container\">
+          <a class=\"navbar-brand\" href=\"/\"><span class=\"accentuation\">T</span>homas <span class=\"accentuation\">G</span>redin</a>
 
-        </div>
+          <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarText\" aria-controls=\"navbarText\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+            <i class=\"fas fa-bars\"></i>
+          </button>
+          <div class=\"collapse navbar-collapse\" id=\"navbarText\">
+                {% block header_navigation %}
+                    {% include 'partials/navigation.html.twig' %}
+                {% endblock %}
+          </div>
+      </div>
     </nav>
+
 {% endblock %}
 
 {% block body %}
-    <section id=\"body\">
+    <div class=\"container-fluid\">
 
-        <div class=\"row\">
+        <div class=\"mt-3\"></div>
+        <section id=\"body\">
 
-            <div class=\"col l3 m12\">
-                <div class=\"card-panel z-depth-2\">
+            <div class=\"row\">
 
-                        <div class=\"center-align\">
-                            <img class=\"responsive-img\" src=\"{{ url('theme://images/profil.jpg') }}\">
-                            <h6>Etudiant ingénieur en Informatique spécialisé en imagerie</h6>
-                        </div>
+                <div class=\"col-md-12 col-lg-3\">
+                    <div class=\"card shadow-sm\">
+                        <img class=\"card-img-top\" src=\"{{ url('theme://images/profil.jpg') }}\">
 
-                        <blockquote>
-                            Passioné par la programmation graphique et la création de jeux vidéo,
-                            j'aime créer de nouvelles choses en partant de zéro ou en utilisant des
-                            moteurs de jeu de référence dans l'industrie comme Unity3D.
-                        </blockquote>
-
-                </div>
-
-                <div class=\"card-panel z-depth-2\">
-
-                    <h5><span class=\"red-text text-lighten-1\">I</span>nformation</h5>
-
-                    <table>
-                        <tbody>
-                          <tr>
-                            <td><i class=\"fas fa-home fa-lg red-text text-lighten-1\"></i></td>
-                            <td>Belfort, France</td>
-                          </tr>
-
-                          <tr>
-                            <td><i class=\"fas fa-flag fa-lg red-text text-lighten-1\"></i></td>
-                            <td>Français</td>
-                          </tr>
-
-                          <tr>
-                            <td><i class=\"fas fa-phone fa-lg red-text text-lighten-1\"></i></td>
-                            <td>(+33)669 606 859</td>
-                          </tr>
-
-                          <tr>
-                            <td><i class=\"fas fa-envelope fa-lg red-text text-lighten-1\"></i></td>
-                            <td>thomas.gredin@utbm.fr</td>
-                          </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-
-                <div class=\"card-panel z-depth-2\">
-
-                    <h5><span class=\"red-text text-lighten-1\">R</span>éseaux sociaux</h5>
-
-                    <br>
-
-                    <div class=\"row\">
-
-                        <div class=\"col s4 center-align\">
-                            <a class=\"\" href=\"https://github.com/StagramTG\">
-                                <i class=\"fab fa-github fa-3x black-text\"></i>
-                            </a>
-                        </div>
-
-                        <div class=\"col s4 center-align\">
-                            <a class=\"\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">
-                                <i class=\"fab fa-linkedin fa-3x blue-text text-darken-2\"></i>
-                            </a>
-                        </div>
-
-                        <div class=\"col s4 center-align\">
-                            <a class=\"\" href=\"https://twitter.com/GredinTom\">
-                                <i class=\"fab fa-twitter fa-3x\"></i>
-                            </a>
+                        <div class=\"card-body\">
+                            <h6 class=\"card-title text-center\">Etudiant ingénieur en Informatique spécialisé en imagerie</h6>
+                            <p>
+                                Passioné par la programmation graphique et la création de jeux vidéo,
+                                j'aime créer de nouvelles choses en partant de zéro ou en utilisant des
+                                moteurs de jeu de référence dans l'industrie comme Unity3D.
+                            </p>
                         </div>
                     </div>
 
+                    <div class=\"card mt-3 shadow-sm\">
+
+                        <div class=\"card-body\">
+
+                            <h5 class=\"card-title\"><span class=\"accentuation\">I</span>nformation</h5>
+
+                            <table class=\"table table-borderless\">
+                                <tbody>
+                                  <tr>
+                                    <td><i class=\"fas fa-home fa-lg accentuation\"></i></td>
+                                    <td>Belfort, France</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td><i class=\"fas fa-flag fa-lg accentuation\"></i></td>
+                                    <td>Français</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td><i class=\"fas fa-phone fa-lg accentuation\"></i></td>
+                                    <td>(+33)669 606 859</td>
+                                  </tr>
+
+                                  <tr>
+                                    <td><i class=\"fas fa-envelope fa-lg accentuation\"></i></td>
+                                    <td>thomas.gredin@utbm.fr</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                    <div class=\"card mt-3 shadow-sm\">
+
+                        <div class=\"card-body\">
+
+                            <h5><span class=\"accentuation\">R</span>éseaux sociaux</h5>
+
+                            <br>
+
+                            <div class=\"row\">
+
+                                <div class=\"col text-center\">
+                                    <a class=\"text-dark\" href=\"https://github.com/StagramTG\">
+                                        <i class=\"fab fa-github fa-3x black-text\"></i>
+                                    </a>
+                                </div>
+
+                                <div class=\"col text-center\">
+                                    <a class=\"text-info\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">
+                                        <i class=\"fab fa-linkedin fa-3x blue-text text-darken-2\"></i>
+                                    </a>
+                                </div>
+
+                                <div class=\"col text-center\">
+                                    <a class=\"text-primary\" href=\"https://twitter.com/GredinTom\">
+                                        <i class=\"fab fa-twitter fa-3x\"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>  
+
+                    </div>
                 </div>
+
+                <div class=\"col-md-12 col-lg-9 mb-3\">
+                    {% block content %}{% endblock %}
+                </div>
+
             </div>
 
-            <div class=\"col l9 m12\">
-                {% block content %}{% endblock %}
-            </div>
+        </section>
 
-        </div>
-
-    </section>
+    </div>
 {% endblock %}
 
 {% block footer %}
-    <footer class=\"page-footer blue-grey darken-4\">
+    <!-- <footer class=\"page-footer blue-grey darken-4\">
       <div class=\"container\">
         <div class=\"row\">
           <div class=\"col l6 s12\">
@@ -504,7 +540,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
         Thomas Gredin © 2018 All right reserved
         </div>
       </div>
-    </footer>
+    </footer> -->
 {% endblock %}
 
 {% block bottom %}
