@@ -32,7 +32,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t<div class=\"row\">
 
 \t\t<div class=\"col-md-12 col-lg-6\">
-\t\t\t<div class=\"card mt-lg-0 mt-sm-3 shadow-sm\">
+\t\t\t<div class=\"card mt-lg-0 mt-3 shadow-sm\">
 \t\t\t\t<div class=\"card-body\">
 \t\t\t\t\t";
         // line 10
@@ -43,7 +43,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t\t</div>
 
 \t\t<div class=\"col-md-12 col-lg-6\">
-\t\t\t<div class=\"card mt-lg-0 mt-sm-3 shadow-sm\">
+\t\t\t<div class=\"card mt-lg-0 mt-3 shadow-sm\">
 \t\t\t\t<div class=\"card-body\">
 
 \t\t\t\t\t<h5 class=\"card-title\"><span class=\"red-text text-lighten-1\">D</span>erniers articles</h5>
@@ -392,7 +392,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t<div class=\"row\">
 
 \t\t<div class=\"col-md-12 col-lg-6\">
-\t\t\t<div class=\"card mt-lg-0 mt-sm-3 shadow-sm\">
+\t\t\t<div class=\"card mt-lg-0 mt-3 shadow-sm\">
 \t\t\t\t<div class=\"card-body\">
 \t\t\t\t\t{{ page.content }}
 \t\t\t\t</div>
@@ -400,7 +400,7 @@ class __TwigTemplate_1204a09fa03baa4002f89ea26f2946b6e5ce3d72423f19134813552c9c2
 \t\t</div>
 
 \t\t<div class=\"col-md-12 col-lg-6\">
-\t\t\t<div class=\"card mt-lg-0 mt-sm-3 shadow-sm\">
+\t\t\t<div class=\"card mt-lg-0 mt-3 shadow-sm\">
 \t\t\t\t<div class=\"card-body\">
 
 \t\t\t\t\t<h5 class=\"card-title\"><span class=\"red-text text-lighten-1\">D</span>erniers articles</h5>
