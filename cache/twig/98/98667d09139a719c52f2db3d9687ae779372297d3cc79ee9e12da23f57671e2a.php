@@ -56,12 +56,12 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 ";
         // line 154
         $this->displayBlock('footer', $context, $blocks);
-        // line 181
+        // line 159
         echo "
 ";
-        // line 182
+        // line 160
         $this->displayBlock('bottom', $context, $blocks);
-        // line 185
+        // line 163
         echo "
 </body>
 </html>
@@ -299,38 +299,16 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
     public function block_footer($context, array $blocks = array())
     {
         // line 155
-        echo "    <!-- <footer class=\"page-footer blue-grey darken-4\">
-      <div class=\"container\">
-        <div class=\"row\">
-          <div class=\"col l6 s12\">
-            <p class=\"grey-text text-lighten-4\">
-                Ce site web est construit autour de <a href=\"https://getgrav.org\">Grav CMS</a> et <a href=\"https://materializecss.com\">Materialize.</a><br>
-                Les icônes proviennent de <a href=\"https://fontawesome.com\">Font awesome</a>
-            </p>
-          </div>
-          <div class=\"col l4 offset-l2 s12\">
-            <h5 class=\"white-text\">Réseaux sociaux</h5>
-            <ul>
-              <li><a class=\"grey-text text-lighten-3\" href=\"https://github.com/StagramTG\">Github</a></li>
-              <li><a class=\"grey-text text-lighten-3\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">Linked In</a></li>
-              <li><a class=\"grey-text text-lighten-3\" href=\"https://twitter.com/GredinTom\">Twitter</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class=\"footer-copyright\">
-        <div class=\"container\">
-        Thomas Gredin © 2018 All right reserved
-        </div>
-      </div>
-    </footer> -->
+        echo "
+    
+
 ";
     }
 
-    // line 182
+    // line 160
     public function block_bottom($context, array $blocks = array())
     {
-        // line 183
+        // line 161
         echo "    ";
         echo $this->getAttribute(($context["assets"] ?? null), "js", array(0 => "bottom"), "method");
         echo "
@@ -349,7 +327,7 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 
     public function getDebugInfo()
     {
-        return array (  334 => 183,  331 => 182,  302 => 155,  299 => 154,  294 => 144,  283 => 145,  281 => 144,  197 => 63,  186 => 54,  183 => 53,  179 => 46,  176 => 45,  173 => 44,  165 => 47,  163 => 44,  152 => 35,  149 => 34,  145 => 27,  142 => 26,  139 => 25,  136 => 24,  132 => 21,  129 => 20,  126 => 19,  123 => 18,  115 => 28,  113 => 24,  107 => 22,  105 => 18,  98 => 14,  94 => 13,  91 => 12,  89 => 11,  78 => 7,  75 => 6,  72 => 5,  65 => 185,  63 => 182,  60 => 181,  58 => 154,  55 => 153,  53 => 53,  50 => 52,  48 => 34,  43 => 32,  40 => 31,  38 => 5,  33 => 3,  30 => 2,  28 => 1,);
+        return array (  312 => 161,  309 => 160,  302 => 155,  299 => 154,  294 => 144,  283 => 145,  281 => 144,  197 => 63,  186 => 54,  183 => 53,  179 => 46,  176 => 45,  173 => 44,  165 => 47,  163 => 44,  152 => 35,  149 => 34,  145 => 27,  142 => 26,  139 => 25,  136 => 24,  132 => 21,  129 => 20,  126 => 19,  123 => 18,  115 => 28,  113 => 24,  107 => 22,  105 => 18,  98 => 14,  94 => 13,  91 => 12,  89 => 11,  78 => 7,  75 => 6,  72 => 5,  65 => 163,  63 => 160,  60 => 159,  58 => 154,  55 => 153,  53 => 53,  50 => 52,  48 => 34,  43 => 32,  40 => 31,  38 => 5,  33 => 3,  30 => 2,  28 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -516,31 +494,9 @@ class __TwigTemplate_857fd730e05a43da8a1c1505c5a75b9b14e9d301f444dccd3ee2ac9c3e1
 {% endblock %}
 
 {% block footer %}
-    <!-- <footer class=\"page-footer blue-grey darken-4\">
-      <div class=\"container\">
-        <div class=\"row\">
-          <div class=\"col l6 s12\">
-            <p class=\"grey-text text-lighten-4\">
-                Ce site web est construit autour de <a href=\"https://getgrav.org\">Grav CMS</a> et <a href=\"https://materializecss.com\">Materialize.</a><br>
-                Les icônes proviennent de <a href=\"https://fontawesome.com\">Font awesome</a>
-            </p>
-          </div>
-          <div class=\"col l4 offset-l2 s12\">
-            <h5 class=\"white-text\">Réseaux sociaux</h5>
-            <ul>
-              <li><a class=\"grey-text text-lighten-3\" href=\"https://github.com/StagramTG\">Github</a></li>
-              <li><a class=\"grey-text text-lighten-3\" href=\"https://www.linkedin.com/in/thomas-gredin-345339137/\">Linked In</a></li>
-              <li><a class=\"grey-text text-lighten-3\" href=\"https://twitter.com/GredinTom\">Twitter</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class=\"footer-copyright\">
-        <div class=\"container\">
-        Thomas Gredin © 2018 All right reserved
-        </div>
-      </div>
-    </footer> -->
+
+    
+
 {% endblock %}
 
 {% block bottom %}
