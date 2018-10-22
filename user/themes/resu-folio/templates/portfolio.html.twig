@@ -17,9 +17,9 @@
 				    
 					<div class="col-lg-4 col-sm-12">
 
-						<div class="card">
+						<div class="card mt-3">
 
-							<img src="{{ (page.media.images|first).url() }}" class="card-img-top">
+							<img src="{{ (page.media.images|first).forceResize(854, 480).url() }}" class="card-img-top">
 							<div class="card-body text-center">
 
 								<p>{{ page.title }}</p>

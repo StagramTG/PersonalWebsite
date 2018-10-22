@@ -54,11 +54,11 @@ class __TwigTemplate_f344cfbf47e62faad2e4e81270c8c76c74c2695c502b6a92ffc688ac99f
             echo "\t\t\t\t    
 \t\t\t\t\t<div class=\"col-lg-4 col-sm-12\">
 
-\t\t\t\t\t\t<div class=\"card\">
+\t\t\t\t\t\t<div class=\"card mt-3\">
 
 \t\t\t\t\t\t\t<img src=\"";
             // line 22
-            echo $this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute($context["page"], "media", array()), "images", array())), "url", array(), "method");
+            echo $this->getAttribute($this->getAttribute(twig_first($this->env, $this->getAttribute($this->getAttribute($context["page"], "media", array()), "images", array())), "forceResize", array(0 => 854, 1 => 480), "method"), "url", array(), "method");
             echo "\" class=\"card-img-top\">
 \t\t\t\t\t\t\t<div class=\"card-body text-center\">
 
@@ -172,9 +172,9 @@ class __TwigTemplate_f344cfbf47e62faad2e4e81270c8c76c74c2695c502b6a92ffc688ac99f
 \t\t\t\t    
 \t\t\t\t\t<div class=\"col-lg-4 col-sm-12\">
 
-\t\t\t\t\t\t<div class=\"card\">
+\t\t\t\t\t\t<div class=\"card mt-3\">
 
-\t\t\t\t\t\t\t<img src=\"{{ (page.media.images|first).url() }}\" class=\"card-img-top\">
+\t\t\t\t\t\t\t<img src=\"{{ (page.media.images|first).forceResize(854, 480).url() }}\" class=\"card-img-top\">
 \t\t\t\t\t\t\t<div class=\"card-body text-center\">
 
 \t\t\t\t\t\t\t\t<p>{{ page.title }}</p>
